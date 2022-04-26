@@ -1,3 +1,8 @@
+// One dark:
+// Dark: #282C34
+// Grey: #ABB2BF
+// Accent: #E06C75
+
 // Background candidates
 // #0C090D
 // #1E191F
@@ -6,21 +11,24 @@
 // Accent color candidates
 // #E01A4F
 // #FF934F
+// #A7435D
 
 // White flavour
 // #FFFBFE
 
-$background-color: #1D191D;
+$dark-color: #282C34;
+
 $bright-color: #FFFBFE;
-$accent-color: #E01A4F;
+$accent-color: #E06C75;
 
 body {
-    background-color: $background-color;
+    background-color: $dark-color;
     margin: 0;
 }
 
 #topBar {
     align-items: center;
+    height: 15vw;
 }
 
 #titleText {
@@ -29,8 +37,18 @@ body {
 }
 
 #profileImg {
-    width: 10vw;
+    width: 35%;
+    display: block;
+    margin: auto;
     border-radius: 50%;
+    align-self: center;
+}
+
+#content {
+    background-color: $bright-color;
+    height: 85vh;
+    padding: 15vw;
+    padding-top: 5vw;
 }
 
 p {
@@ -43,4 +61,18 @@ h1 {
     color: $accent-color;
     font-family:monospace;
     font-size: 5vw;
+}
+
+#topBar p {
+    color: $accent-color;
+}
+#topBar h1 {
+    color: $bright-color;
+}
+
+#content p {
+    color: $dark-color;
+}
+#content h1 {
+    color: $accent-color;
 }
