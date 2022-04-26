@@ -1,24 +1,30 @@
-body {
-    // Background candidates
-    // #0C090D
-    // #1E191F
+// Background candidates
+// #0C090D
+// #1E191F
 
-    // Accent color candidates
-    // #E01A4F
-    // #FF934F
-    background-color: #0C090D;
+// Accent color candidates
+// #E01A4F
+// #FF934F
+
+// White flavour
+// #FFFBFE
+
+$background-color: #0C090D;
+$bright-color: #FFFBFE;
+$accent-color: #E01A4F;
+
+body {
+    background-color: $background-color;
 }
 
 p {
-    // White flavour
-    // #FFFBFE
-    color: #FFFBFE;
+    color: $bright-color;
     font-family:monospace;
     font-size: 2vw;
 }
 
 h1 {
-    color: #E01A4F;
+    color: $accent-color;
     font-family:monospace;
     font-size: 5vw;
 }
