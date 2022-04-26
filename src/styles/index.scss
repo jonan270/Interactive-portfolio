@@ -1,6 +1,7 @@
 // Background candidates
 // #0C090D
 // #1E191F
+// #1D191D
 
 // Accent color candidates
 // #E01A4F
@@ -9,18 +10,33 @@
 // White flavour
 // #FFFBFE
 
-$background-color: #0C090D;
+$background-color: #1D191D;
 $bright-color: #FFFBFE;
 $accent-color: #E01A4F;
 
 body {
     background-color: $background-color;
+    margin: 0;
+}
+
+#topBar {
+    align-items: center;
+}
+
+#titleText {
+    text-align: center;
+    line-height: 0;
+}
+
+#profileImg {
+    width: 10vw;
+    border-radius: 50%;
 }
 
 p {
     color: $bright-color;
     font-family:monospace;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 h1 {
