@@ -23,12 +23,13 @@ $accent-color: #E06C75;
 
 body {
     background-color: $dark-color;
+    overflow: hidden;
     margin: 0;
 }
 
 #topBar {
     align-items: center;
-    height: 15vw;
+    height: 15vh;
 }
 
 #titleText {
@@ -46,33 +47,36 @@ body {
 
 #content {
     background-color: $bright-color;
-    height: 85vh;
+    height: 70vh;
     padding: 15vw;
     padding-top: 5vw;
+    overflow-y: scroll;
 }
 
 p {
     color: $bright-color;
     font-family:monospace;
-    font-size: 1.5vw;
 }
 
 h1 {
     color: $accent-color;
     font-family:monospace;
-    font-size: 5vw;
 }
 
 #topBar p {
     color: $accent-color;
+    font-size: 1.5vw;
 }
 #topBar h1 {
     color: $bright-color;
+    font-size: 5vw;
 }
 
 #content p {
     color: $dark-color;
+    font-size: 18px;
 }
 #content h1 {
     color: $accent-color;
+    font-size: 4vw;
 }
