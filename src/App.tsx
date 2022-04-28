@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, useRef, useEffect } from "react";
 import { Button } from '@mui/material';
 import TopBar from './components/TopBar';
 import Content from './components/Content';
@@ -19,8 +19,17 @@ const theme = createTheme({
 });
 
 function App() {
+  const testRef = useRef<null | HTMLDivElement>(null);
+  const executeScroll = () => {
+    if(testRef != null) {
+      console.log(testRef.current);
+      testRef.current!.scrollIntoView();
+    }
+  }
+
   const onButtonClick = () => {
     console.log("Click");
+    executeScroll();
   }
 
   return (
@@ -30,13 +39,14 @@ function App() {
           <div id='titleText'>
               <h1>Jonathan Andersson</h1>
               <p>4th year M.Sc Student in Media Technology</p>
-              <Button className="button" variant="contained" onClick={() => onButtonClick}>About me</Button>
-              <Button className="button" variant="outlined" onClick={() => onButtonClick}>Project showroom</Button>
-              <Button className="button" variant="outlined" onClick={() => onButtonClick}>Experience</Button>
+              <Button className="button" variant="contained" onClick={() => onButtonClick()}>About me</Button>
+              <Button className="button" variant="outlined" onClick={() => onButtonClick()}>Project showroom</Button>
+              <Button className="button" variant="outlined" onClick={() => onButtonClick()}>Experience</Button>
           </div>
         </div>
         <Content/>
       </div>
+      <div ref={testRef}>Scroll here</div>
     </ThemeProvider>
   );
 }
