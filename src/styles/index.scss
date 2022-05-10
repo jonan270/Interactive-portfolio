@@ -22,14 +22,16 @@ $bright-color: #FFFBFE;
 $accent-color: #E06C75;
 
 body {
-    background-color: $dark-color;
-    overflow: hidden;
     margin: 0;
 }
 
 #topBar {
     align-items: center;
-    height: 15vh;
+    height: 14vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: $dark-color;
 }
 
 #titleText {
@@ -49,8 +51,7 @@ body {
     background-color: $bright-color;
     height: 70vh;
     padding: 15vw;
-    padding-top: 5vw;
-    overflow-y: scroll;
+    padding-top: 20vh;
 }
 
 p {
@@ -65,11 +66,11 @@ h1 {
 
 #topBar p {
     color: $accent-color;
-    font-size: 1.5vw;
+    font-size: 1.5vh;
 }
 #topBar h1 {
     color: $bright-color;
-    font-size: 5vw;
+    font-size: 5vh;
 }
 
 #content p {

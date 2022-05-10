@@ -34,19 +34,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <div id = 'topBar'>
-          <div id='titleText'>
-              <h1>Jonathan Andersson</h1>
-              <p>4th year M.Sc Student in Media Technology</p>
-              <Button className="button" variant="contained" onClick={() => onButtonClick()}>About me</Button>
-              <Button className="button" variant="outlined" onClick={() => onButtonClick()}>Project showroom</Button>
-              <Button className="button" variant="outlined" onClick={() => onButtonClick()}>Experience</Button>
-          </div>
-        </div>
+      <div>
+        <TopBar/>
         <Content/>
       </div>
-      <div ref={testRef}>Scroll here</div>
     </ThemeProvider>
   );
 }
