@@ -1,15 +1,14 @@
-import React, { Component, useRef, useEffect } from "react";
-import { Button } from '@mui/material';
+import React, { useRef } from "react";
 import TopBar from './components/TopBar';
 import Content from './components/Content';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      // Bright accent color
-      main: '#E06C75',
+      main: '#E06C75',        // Bright accent color
       contrastText: "#282C34" // Dark button text
     },
     secondary: {
@@ -19,24 +18,13 @@ const theme = createTheme({
 });
 
 function App() {
-  const testRef = useRef<null | HTMLDivElement>(null);
-  const executeScroll = () => {
-    if(testRef != null) {
-      console.log(testRef.current);
-      testRef.current!.scrollIntoView();
-    }
-  }
-
-  const onButtonClick = () => {
-    console.log("Click");
-    executeScroll();
-  }
-
   return (
     <ThemeProvider theme={theme}>
       <div>
+        <Router>
         <TopBar/>
         <Content/>
+        </Router>
       </div>
     </ThemeProvider>
   );

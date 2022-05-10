@@ -1,19 +1,30 @@
-import profile from "../images/profile.jpg"
 import { Button } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
+import Box from '@mui/material/Box';
 
 //<img src={profile} id='profileImg'/>
 const TopBar: React.FC<{}> = () => {
+    const buttonMargin : number = 2;
     return(
-        <div id = 'topBar'>
-            <div id='titleText'>
+        <nav className="topBar">
+            <div id="titleText">
                 <h1>Jonathan Andersson</h1>
                 <p>4th year M.Sc Student in Media Technology</p>
-                <Button className="button" variant="contained" onClick={() => {}}>About me</Button>
-                <Button className="button" variant="outlined" onClick={() => {}}>Project showroom</Button>
-                <Button className="button" variant="outlined" onClick={() => {}}>Experience</Button>
             </div>
-        </div>
+            <div id="menuButtons">
+                <Box display="flex" justifyContent="center">
+                    <Box mr={buttonMargin}>
+                        <Button className="button" variant="contained" component={Link} smooth to="/#about">About me</Button>
+                    </Box>
+                    <Box mr={buttonMargin}>
+                        <Button className="button" variant="contained" component={Link} smooth to="/#projects">Project showroom</Button>
+                    </Box>
+                    <Box mr={buttonMargin}>
+                        <Button className="button" variant="contained" component={Link} smooth to="/#experience">Experience</Button>
+                    </Box>
+                </Box>
+            </div>
+        </nav>
     )
 }
 

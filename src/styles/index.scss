@@ -25,7 +25,11 @@ body {
     margin: 0;
 }
 
-#topBar {
+Button {
+    margin-right: 20px;
+}
+
+.topBar {
     align-items: center;
     height: 14vh;
     width: 100%;
@@ -37,6 +41,10 @@ body {
 #titleText {
     text-align: center;
     line-height: 0;
+}
+
+#menuButtons {
+    text-align: center;
 }
 
 #profileImg {
@@ -64,11 +72,11 @@ h1 {
     font-family:monospace;
 }
 
-#topBar p {
+.topBar p {
     color: $accent-color;
     font-size: 1.5vh;
 }
-#topBar h1 {
+.topBar h1 {
     color: $bright-color;
     font-size: 5vh;
 }
