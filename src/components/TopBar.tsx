@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import { HashLink as Link } from 'react-router-hash-link';
 import Box from '@mui/material/Box';
 
-//<img src={profile} id='profileImg'/>
+// HashLink menu inspiration: https://github.com/mohdraqif/LA-16, https://www.youtube.com/watch?v=d0c4aPO9PNg
 const TopBar: React.FC<{}> = () => {
     const buttonMargin : number = 2;
     return(
