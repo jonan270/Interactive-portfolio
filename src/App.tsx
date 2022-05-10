@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import TopBar from './components/TopBar';
 import Content from './components/Content';
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -22,8 +21,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <div>
         <Router>
-        <TopBar/>
-        <Content/>
+          <TopBar/>
+          <Content/>
         </Router>
       </div>
     </ThemeProvider>
