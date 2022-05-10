@@ -1,7 +1,5 @@
 import profile from "../images/profile.jpg"
 import { Button } from '@mui/material';
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import { HashLink as Link } from 'react-router-hash-link';
 
 //<img src={profile} id='profileImg'/>
