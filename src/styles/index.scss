@@ -17,7 +17,6 @@
 // #FFFBFE
 
 $dark-color: #282C34;
-
 $bright-color: #FFFBFE;
 $accent-color: #E06C75;
 
@@ -31,7 +30,7 @@ Button {
 
 .topBar {
     align-items: center;
-    height: 14vh;
+    height: 16vh;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -57,9 +56,7 @@ Button {
 
 #content {
     background-color: $bright-color;
-    height: 70vh;
-    padding: 15vw;
-    padding-top: 20vh;
+    padding: 0 15vw 0 15vw;
 }
 
 p {
@@ -79,6 +76,10 @@ h1 {
 .topBar h1 {
     color: $bright-color;
     font-size: 5vh;
+}
+
+.chapter {
+    padding-top: 20vh;
 }
 
 #content p {
