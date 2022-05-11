@@ -1,6 +1,6 @@
 const Projects: React.FC<{}> = () => {
     return(
-        <div id = 'aboutMe'>
+        <div id="projects" className="chapter">
             <h1>Project showroom</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
                 sed lacus gravida vehicula. Nunc nec erat ut leo eleifend accumsan. Aenean

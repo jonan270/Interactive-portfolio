@@ -1,11 +1,7 @@
-import profile from "../images/profile.jpg"
-//<img src={profile} id='profileImg'/>
-
-const AboutMe: React.FC<{}> = () => {
+const Experience: React.FC<{}> = () => {
     return(
-        <div id = 'about' className="chapter">
-            <img src={profile} id='profileImg'/>
-            <h1>About me</h1>
+        <div id="experience" className="chapter">
+            <h1>Experience</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
                 sed lacus gravida vehicula. Nunc nec erat ut leo eleifend accumsan. Aenean
                 eget nisi ac dui imperdiet cursus. Sed sit amet mattis ex.
@@ -50,4 +46,4 @@ const AboutMe: React.FC<{}> = () => {
     )
 }
 
-export default AboutMe;
+export default Experience;
