@@ -30,7 +30,7 @@ Button {
 
 .topBar {
     align-items: center;
-    height: 16vh;
+    height: 20vh;
     width: 100%;
     position: fixed;
     z-index: 2;
@@ -44,6 +44,7 @@ Button {
 
 #menuButtons {
     text-align: center;
+    margin-top: 3.2vh;
 }
 
 #profileImg {
@@ -79,7 +80,7 @@ h1 {
 }
 
 .chapter {
-    padding-top: 20vh;
+    padding-top: 22vh;
 }
 
 #content p {
