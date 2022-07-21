@@ -1,12 +1,13 @@
 import profile from "../images/profile.jpg"
-//<img src={profile} id='profileImg'/>
+import "../styles/images.scss"
 
 const AboutMe: React.FC<{}> = () => {
     return(
-        <div id = 'about' className="chapter">
-            <img src={profile} id='profileImg'/>
+        <div id = "about" className="chapter">
+            <img src={profile} alt="profile_image" id='profileImg'/>
             <h1>About me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
                 sed lacus gravida vehicula. Nunc nec erat ut leo eleifend accumsan. Aenean
                 eget nisi ac dui imperdiet cursus. Sed sit amet mattis ex.
                 

@@ -1,6 +1,7 @@
 import globalIllumination from "../images/global_illumination.bmp"
 import caps from "../images/caps.png"
 import raid from "../images/table_raid.png"
+import "../styles/images.scss"
 
 const Projects: React.FC<{}> = () => {
     return(

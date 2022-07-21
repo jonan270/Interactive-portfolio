@@ -1,17 +1,17 @@
-import TopBar from './components/TopBar';
-import Content from './components/Content';
-import {BrowserRouter as Router} from 'react-router-dom';
+import TopBar from "./components/TopBar";
+import Content from "./components/Content";
+import {BrowserRouter as Router} from "react-router-dom";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#E06C75',        // Bright accent color
+      main: "#E06C75",        // Bright accent color
       contrastText: "#282C34" // Dark button text
     },
     secondary: {
-      main: '#282C34',
+      main: "#282C34",
     }
   },
 });
