@@ -1,7 +1,34 @@
+import globalIllumination from "../images/global_illumination.bmp"
+import caps from "../images/caps.png"
+import raid from "../images/table_raid.png"
+
 const Projects: React.FC<{}> = () => {
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
+            <p>
+                Below you will find some especially interesting projects from
+                my study time. Have a look around!
+            </p>
+            <div className="showcaseRow">
+                <div className="showcaseItem">
+                    <img src={globalIllumination}
+                    alt="global_illumination"
+                    className="showcaseImage"/>
+                </div>
+                <div className="showcaseItem">
+                    <img src={caps}
+                    alt="bottlecap_image"
+                    className="showcaseImage"/>
+                </div>
+            </div>
+            <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={raid}
+                    alt="tableraid"
+                    className="showcaseImage"/>
+                </div>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
                 sed lacus gravida vehicula. Nunc nec erat ut leo eleifend accumsan. Aenean
                 eget nisi ac dui imperdiet cursus. Sed sit amet mattis ex.

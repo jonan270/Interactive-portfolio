@@ -59,6 +59,22 @@ Button {
     background-color: $bright-color;
     padding: 0 15vw 0 15vw;
 }
+.showcaseRow {
+    display: flex;
+}
+
+.showcaseItem {
+    flex: 33%;
+    padding: 5px;
+    &--large {
+        @extend .showcaseItem;
+        flex: 100%;
+    }
+}
+
+.showcaseImage {
+    width: 100%;
+}
 
 p {
     color: $bright-color;
