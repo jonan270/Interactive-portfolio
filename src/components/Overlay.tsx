@@ -13,9 +13,11 @@ const Overlay: React.FC<Props> = ({overlay}) => {
             {overlay.showOverlay ? 
             <div className="background" onClick={() => overlay.setOverlay(false)}>
                 <div className="foreground" onClick={(event)=>{event.stopPropagation()}}>
-                <IconButton color="primary" aria-label="upload picture" component="label">
-                    <CloseIcon onClick={() => overlay.setOverlay(false)}/>
-                </IconButton>
+                <div className="overlayButtonContainer">
+                    <IconButton  onClick={() => overlay.setOverlay(false)} color="primary" aria-label="upload picture" component="label">
+                        <CloseIcon/>
+                    </IconButton>
+                </div>
                     <h1>Test title!</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur,
