@@ -16,13 +16,19 @@
 }
 
 .foreground {
+    position: absolute;
     margin-top: 5%;
     margin-bottom: 10%;
-    width: 70%;
-    height: 90%;
+
+    width: 65%;
+    height: 65%;
+    padding: 5%;
+
     border-radius: 2%;
     background-color: $dark-color;
     z-index: 3;
+    overflow-y: scroll;
+
     cursor: default;
 }
 
