@@ -1,11 +1,21 @@
 import globalIllumination from "../images/global_illumination.bmp"
 import caps from "../images/caps.png"
 import raid from "../images/table_raid.png"
+import Overlay from "./Overlay"
 import "../styles/images.scss"
+import { useState } from "react"
 
 const Projects: React.FC<{}> = () => {
+    const [showOverlay, setOverlay] = useState(false);
+
     const showCaseClick = () => {
         console.log("Image clicked");
+        setOverlay(prev => !prev);
+    }
+
+    const overlayProps = {
+        showOverlay: showOverlay,
+        setOverlay: setOverlay
     }
 
     return(
@@ -15,19 +25,23 @@ const Projects: React.FC<{}> = () => {
                 Below you will find some especially interesting projects from
                 my study time. Have a look around!
             </p>
+            <Overlay {...overlayProps}/>
             <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={globalIllumination}
                     alt="global_illumination"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={showCaseClick}>
-                        <p>test</p>
+                        <p>Advanced Global Illumination</p>
                     </div>
                 </div>
                 <div className="showcaseItem">
                     <img src={caps}
                     alt="bottlecap_image"
                     className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={showCaseClick}>
+                        <p>Image reproduction using bottlecaps</p>
+                    </div>
                 </div>
             </div>
             <div className="showcaseRow">
@@ -35,6 +49,9 @@ const Projects: React.FC<{}> = () => {
                     <img src={raid}
                     alt="tableraid"
                     className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={showCaseClick}>
+                        <p>Table Raid - a turn based game in VR</p>
+                    </div>
                 </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
