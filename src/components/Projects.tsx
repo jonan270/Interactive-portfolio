@@ -7,17 +7,19 @@ import { useState } from "react"
 
 const Projects: React.FC<{}> = () => {
     const [showOverlay, setOverlay] = useState(false);
-
+    
+    const overlayProps: Overlay = {
+        showOverlay: showOverlay,
+        setOverlay: setOverlay
+    }
     const showCaseClick = () => {
         console.log("Image clicked");
         setOverlay(prev => !prev);
     }
 
-    const overlayProps = {
-        showOverlay: showOverlay,
-        setOverlay: setOverlay
-    }
-
+    // let overlayProps: Overlay = () => {
+    //     show
+    // }
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
@@ -25,7 +27,7 @@ const Projects: React.FC<{}> = () => {
                 Below you will find some especially interesting projects from
                 my study time. Have a look around!
             </p>
-            <Overlay {...overlayProps}/>
+            <Overlay overlay={overlayProps}/>
             <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={globalIllumination}

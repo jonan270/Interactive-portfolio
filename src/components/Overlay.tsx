@@ -1,14 +1,13 @@
 import React from "react";
 
 interface Props {
-    showOverlay: boolean,
-    setOverlay: React.Dispatch<React.SetStateAction<boolean>>
+    overlay: Overlay
 }
 
-const Overlay: React.FC<Props> = (props: Props) => {
+const Overlay: React.FC<Props> = ({overlay}) => {
     return(
         <div>
-            {props.showOverlay ? <h1>Overlay</h1> : null}
+            {overlay.showOverlay ? <h1>Overlay</h1> : null}
         </div>
     )
 }
