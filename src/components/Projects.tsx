@@ -19,9 +19,8 @@ const Projects: React.FC<{}> = () => {
                 <div className="showcaseItem">
                     <img src={globalIllumination}
                     alt="global_illumination"
-                    onClick={showCaseClick}
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay">
+                    <div className="showcaseOverlay" onClick={showCaseClick}>
                         <p>test</p>
                     </div>
                 </div>
