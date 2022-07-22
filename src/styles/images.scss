@@ -1,3 +1,5 @@
+$accent-color: #E06C75;
+
 #profileImg {
     width: 35%;
     display: block;
@@ -13,14 +15,33 @@
 .showcaseItem {
     flex: 33%;
     padding: 5px;
+    position: relative;
     &--large {
         @extend .showcaseItem;
         flex: 100%;
     }
 }
 
+.showcaseItem:hover .showcaseOverlay {
+    opacity: 1;
+}
+
 .showcaseImage {
     width: 100%;
     vertical-align: top;
     border-radius: 2%;
+}
+
+.showcaseOverlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 0;
+    right: 0;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 2%;
+    background-color: $accent-color;
 }

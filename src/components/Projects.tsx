@@ -4,6 +4,10 @@ import raid from "../images/table_raid.png"
 import "../styles/images.scss"
 
 const Projects: React.FC<{}> = () => {
+    const showCaseClick = () => {
+        console.log("Image clicked");
+    }
+
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
@@ -15,7 +19,11 @@ const Projects: React.FC<{}> = () => {
                 <div className="showcaseItem">
                     <img src={globalIllumination}
                     alt="global_illumination"
+                    onClick={showCaseClick}
                     className="showcaseImage"/>
+                    <div className="showcaseOverlay">
+                        <p>test</p>
+                    </div>
                 </div>
                 <div className="showcaseItem">
                     <img src={caps}
