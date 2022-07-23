@@ -21,6 +21,12 @@ Button {
     line-height: 0;
 }
 
+#hyperButtons {
+    position: absolute;
+    z-index: 2;
+    margin: 10px;
+}
+
 #menuButtons {
     text-align: center;
     margin-top: 3.2vh;

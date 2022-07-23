@@ -17,9 +17,6 @@ const Projects: React.FC<{}> = () => {
         setOverlay(prev => !prev);
     }
 
-    // let overlayProps: Overlay = () => {
-    //     show
-    // }
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
