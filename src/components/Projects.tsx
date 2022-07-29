@@ -1,25 +1,24 @@
-import globalIllumination from "../images/global_illumination.bmp"
-import caps from "../images/caps.png"
-import raid from "../images/table_raid.png"
+import globalIllumination_img from "../images/global_illumination.bmp"
+import caps_img from "../images/caps.png"
+import raid_img from "../images/table_raid.png"
 import Overlay from "./Overlay"
 import "../styles/images.scss"
 import { useState } from "react"
+import { global_illumination } from "../projects/global_illumination"
 
 const Projects: React.FC<{}> = () => {
     const [showOverlay, setOverlay] = useState(false);
     
     const overlayProps: Overlay = {
         showOverlay: showOverlay,
-        setOverlay: setOverlay
+        setOverlay: setOverlay,
+        content: global_illumination
     }
     const showCaseClick = () => {
         console.log("Image clicked");
         setOverlay(prev => !prev);
     }
 
-    // let overlayProps: Overlay = () => {
-    //     show
-    // }
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
@@ -30,7 +29,7 @@ const Projects: React.FC<{}> = () => {
             <Overlay overlay={overlayProps}/>
             <div className="showcaseRow">
                 <div className="showcaseItem">
-                    <img src={globalIllumination}
+                    <img src={globalIllumination_img}
                     alt="global_illumination"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={showCaseClick}>
@@ -38,7 +37,7 @@ const Projects: React.FC<{}> = () => {
                     </div>
                 </div>
                 <div className="showcaseItem">
-                    <img src={caps}
+                    <img src={caps_img}
                     alt="bottlecap_image"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={showCaseClick}>
@@ -48,7 +47,7 @@ const Projects: React.FC<{}> = () => {
             </div>
             <div className="showcaseRow">
                 <div className="showcaseItem--large">
-                    <img src={raid}
+                    <img src={raid_img}
                     alt="tableraid"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={showCaseClick}>
