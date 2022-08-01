@@ -30,53 +30,8 @@ const Overlay: React.FC<Props> = ({overlay}) => {
                         <CloseIcon/>
                     </IconButton>
                 </div>
-                    <h1>Test title!</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        <br /><br />
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        <br /><br />
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        <br /><br />
-
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        <br /><br />
-
-                        Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Fuga, vel magnam? Quidem
-                        impedit doloribus nemo quam, eum odit
-                        nesciunt qui molestiae tempora repellat.
-                        Incidunt quisquam reiciendis corporis minus
-                        praesentium id!
-                        <br /><br />
-                    </p>
+                    <h1>{overlay.content.title}</h1>
+                    <div className="description"><p>{overlay.content.description}</p></div>
                 </div>
             </div>
             : null}

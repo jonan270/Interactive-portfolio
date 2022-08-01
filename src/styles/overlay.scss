@@ -32,6 +32,10 @@
     cursor: default;
 }
 
+.description {
+    // white-space: pre-line;
+}
+
 .foreground p {
     color: $bright-color !important;
 }
