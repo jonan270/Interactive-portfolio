@@ -1,3 +1,5 @@
+declare module "*.pdf";
+
 interface Overlay {
     showOverlay: boolean,
     setOverlay: React.Dispatch<React.SetStateAction<boolean>>,

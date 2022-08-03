@@ -1,10 +1,11 @@
-import globalIllumination_img from "../images/global_illumination.bmp"
+import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps.png"
 import raid_img from "../images/table_raid.png"
 import Overlay from "./Overlay"
 import "../styles/images.scss"
 import React, { useState } from "react"
 import Experience from "./Experience"
+import GlobalIllumination from "../projects/GlobalIllumination"
 import AboutMe from "./AboutMe"
 
 const Projects: React.FC<{}> = () => {
@@ -44,7 +45,7 @@ const Projects: React.FC<{}> = () => {
                     <img src={globalIllumination_img}
                     alt="global_illumination"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => triggerOverlay(Experience)}>
+                    <div className="showcaseOverlay" onClick={() => triggerOverlay(GlobalIllumination)}>
                         <p>Advanced Global Illumination</p>
                     </div>
                 </div>
