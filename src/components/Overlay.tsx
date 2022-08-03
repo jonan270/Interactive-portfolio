@@ -22,7 +22,9 @@ const Overlay: React.FC<Props> = ({overlay}) => {
                             <CloseIcon/>
                         </IconButton>
                     </div>
-                    {<overlay.childComponent/>}
+                    <div className="fgContent">
+                        {<overlay.childComponent/>}
+                    </div>
                 </div>
             </div>
             : null}

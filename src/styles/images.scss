@@ -30,7 +30,7 @@ $showcase-padding: 5px;
 .showcaseImage {
     width: 100%;
     vertical-align: top;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 .showcaseOverlay {
@@ -43,7 +43,7 @@ $showcase-padding: 5px;
     width: calc(100% - 2 * $showcase-padding);
     opacity: 0;
     transition: .3s ease;
-    border-radius: 2%;
+    border-radius: 10px;
     background-color: $accent-color;
 }
 

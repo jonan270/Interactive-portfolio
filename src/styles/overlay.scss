@@ -20,11 +20,10 @@
     margin-top: 5%;
     margin-bottom: 10%;
 
-    width: 65%;
-    height: 65%;
-    padding: 5%;
+    width: 75%;
+    height: 85%;
 
-    border-radius: 2%;
+    border-radius: 10px;
     background-color: $dark-color;
     z-index: 3;
     overflow-y: scroll;
@@ -32,8 +31,8 @@
     cursor: default;
 }
 
-.description {
-    // white-space: pre-line;
+.fgContent {
+    padding: 5%;
 }
 
 .foreground p {
@@ -41,5 +40,11 @@
 }
 
 .overlayButtonContainer {
-    float: right;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    width: 75%;
+
+    border-radius: 10px;
+    background-color: $dark-color;
 }
