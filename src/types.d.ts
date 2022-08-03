@@ -1,7 +1,7 @@
 interface Overlay {
     showOverlay: boolean,
-    setOverlay: React.Dispatch<React.SetStateAction<boolean>>
-    content: ModalContent
+    setOverlay: React.Dispatch<React.SetStateAction<boolean>>,
+    childComponent: React.FC<{}>
 }
 
 interface ModalContent {
