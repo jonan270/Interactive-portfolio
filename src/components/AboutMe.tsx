@@ -22,7 +22,7 @@ const AboutMe: React.FC<{}> = () => {
                 <SchoolIcon color="primary"/>
                 <a
                 className="iconText"
-                href="https://studieinfo.liu.se/en/program/6CMEN"
+                href="https://liu.se/utbildning/program/6cmen"
                 target="_blank" rel="noreferrer"
                 >
                     5th year M.Sc Student in Media Technology
