@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+.iconTextRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.iconText {
+    color: $accent-color !important;
+    margin: 5px;
+    margin-left: 10px;
+}
