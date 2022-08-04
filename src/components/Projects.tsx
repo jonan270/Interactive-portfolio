@@ -4,9 +4,10 @@ import raid_img from "../images/table_raid.png"
 import Overlay from "./Overlay"
 import "../styles/images.scss"
 import React, { useState } from "react"
+
 import Experience from "./Experience"
 import GlobalIllumination from "../projects/GlobalIllumination"
-import AboutMe from "./AboutMe"
+import TableRaid from "../projects/TableRaid"
 
 const Projects: React.FC<{}> = () => {
     // State to handle wheter overlay should be displayed or not
@@ -16,7 +17,7 @@ const Projects: React.FC<{}> = () => {
     const [content, setContent] = useState({
         showOverlay: showOverlay,
         setOverlay: setOverlay,
-        childComponent: Experience
+        childComponent: GlobalIllumination
     });
     content.showOverlay = showOverlay;
     content.setOverlay = setOverlay;
@@ -63,7 +64,7 @@ const Projects: React.FC<{}> = () => {
                     <img src={raid_img}
                     alt="tableraid"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => triggerOverlay(AboutMe)}>
+                    <div className="showcaseOverlay" onClick={() => triggerOverlay(TableRaid)}>
                         <p>Table Raid - a turn based game in VR</p>
                     </div>
                 </div>

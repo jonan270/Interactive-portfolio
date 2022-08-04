@@ -58,6 +58,37 @@ a {
     font-size: 18px;
 }
 
+ul {
+    color: $accent-color;
+}
+
+ul p {
+    color: $bright-color;
+    margin: 0;
+}
+// ### IFRAME RELATED ###
+// Actual iframe
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0;
+}
+
+// Makes padding around iframe
+// work properly.
+.iframeWrapper {
+    padding: 5% 10% 5% 10%;
+}
+
+// Conserve aspect ratio
+.iframeContainer {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+// ######################
 .topBar p {
     color: $accent-color;
     font-size: 1.5vh;
