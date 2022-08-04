@@ -40,7 +40,7 @@ const TopBar: React.FC<{}> = () => {
             </div>
             <div id="titleText">
                 <h1>Jonathan Andersson</h1>
-                <p>4th year M.Sc Student in Media Technology</p>
+                <p>5th year M.Sc Student in Media Technology</p>
             </div>
             <div id="menuButtons">
                 <Box display="flex" justifyContent="center">
