@@ -14,6 +14,14 @@ Button {
     position: fixed;
     z-index: 2;
     background-color: $dark-color;
+    &--phone {
+        @extend .topBar;
+        height: 60px;
+    }
+}
+
+.topBarPhone {
+
 }
 
 #titleText {
@@ -50,12 +58,13 @@ h1 {
 h2 {
     color: $accent-color;
     font-family:monospace;
+    font-size: min(18px, 3vw);
 }
 
 a {
     color: $secondary-color;
     font-family:monospace;
-    font-size: 18px;
+    font-size: min(18px, 3vw);
 }
 
 ul {
@@ -104,9 +113,8 @@ iframe {
 
 #content p {
     color: $dark-color;
-    font-size: 18px;
+    font-size: min(18px, 3vw);
 }
 #content h1 {
     color: $accent-color;
-    font-size: 4vw;
 }

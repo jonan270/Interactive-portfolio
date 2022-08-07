@@ -17,11 +17,10 @@
 
 .foreground {
     position: absolute;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin: 0;
 
     width: 75%;
-    height: 85%;
+    height: 100%;
 
     border-radius: 10px;
     background-color: $dark-color;
@@ -42,7 +41,6 @@
 .overlayButtonContainer {
     position: fixed;
     z-index: 3;
-    width: 100%;
     width: 75%;
 
     border-radius: 10px;

@@ -25,7 +25,7 @@ const AboutMe: React.FC<{}> = () => {
                 href="https://liu.se/utbildning/program/6cmen"
                 target="_blank" rel="noreferrer"
                 >
-                    5th year M.Sc Student in Media Technology
+                    M.Sc in Media Technology
                 </a>
             </div>
             <p>
