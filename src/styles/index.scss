@@ -38,15 +38,30 @@ Button {
     }
 }
 
-#hyperButtons {
+.hyperButtons {
     position: absolute;
     z-index: 2;
     margin: 10px;
 }
 
-#menuButtons {
-    text-align: center;
-    margin-top: 3.2vh;
+.menuButtons {
+    margin: 0;
+    margin-top: 2vh;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    &--phoneMenu {
+        @extend .menuButtons;
+        top: 45px;
+
+        margin-top: 0;
+    }
 }
 
 #content {

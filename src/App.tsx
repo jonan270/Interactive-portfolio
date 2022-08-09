@@ -28,7 +28,7 @@ function App() {
   // Trigger the overlay with the provided child component
   const triggerOverlay = (component: React.FC<{}>) => {
     console.log("Image clicked");
-    setContent({
+    setOverlayContent({
         showOverlay: showOverlay,
         setOverlay: setOverlay,
         childComponent: component,
@@ -38,24 +38,24 @@ function App() {
   }
 
   // State to handle the childcomponent of overlay
-  const [content, setContent] = useState({
+  const [overlayContent, setOverlayContent] = useState({
       showOverlay: showOverlay,
       setOverlay: setOverlay,
       childComponent: GlobalIllumination,
       triggerOverlay: triggerOverlay
   });
-  content.showOverlay = showOverlay;
-  content.setOverlay = setOverlay;
-  content.triggerOverlay = triggerOverlay;
+  overlayContent.showOverlay = showOverlay;
+  overlayContent.setOverlay = setOverlay;
+  overlayContent.triggerOverlay = triggerOverlay;
 
   
   return (
     <ThemeProvider theme={theme}>
       <div>
         <Router>
-          <Overlay overlay={content}/>
+          <Overlay overlay={overlayContent}/>
           <TopBar/>
-          <Content overlay={content}/>
+          <Content overlay={overlayContent}/>
         </Router>
       </div>
     </ThemeProvider>

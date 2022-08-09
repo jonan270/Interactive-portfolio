@@ -4,23 +4,20 @@ import GitIcon from "@mui/icons-material/GitHub"
 import { LinkedIn } from "@mui/icons-material";
 import Box from "@mui/material/Box";
 
+interface Props {
+    links: Links
+}
 
 // HashLink menu inspiration:
 // https://github.com/mohdraqif/LA-16, 
 // https://www.youtube.com/watch?v=d0c4aPO9PNg
-const TopBarDesktop: React.FC<{}> = () => {
+const TopBarDesktop: React.FC<Props> = ({links}) => {
     const buttonMargin: number = 2;
-
-    const link_linkedin: string = 
-        "https://www.linkedin.com/in/jonathan-andersson-43488a209";
-
-    const link_git: string =
-        "https://github.com/jonan270";
 
     return(
         <nav className="topBar">
-            <div id="hyperButtons">
-                <a href={link_git} target="_blank" rel="noreferrer">
+            <div className="hyperButtons">
+                <a href={links.gitLink} target="_blank" rel="noreferrer">
                     <IconButton
                         color="primary"
                         aria-label="Visit GitHub page"
@@ -28,7 +25,7 @@ const TopBarDesktop: React.FC<{}> = () => {
                             <GitIcon/>
                     </IconButton>
                 </a>
-                <a href={link_linkedin} target="_blank" rel="noreferrer">
+                <a href={links.linkedinLink} target="_blank" rel="noreferrer">
                     <IconButton
                         onClick={() => console.log("Linking to GitHub...")}
                         color="primary"
@@ -42,7 +39,7 @@ const TopBarDesktop: React.FC<{}> = () => {
                 <h1>Jonathan Andersson</h1>
                 <p>5th year M.Sc Student in Media Technology</p>
             </div>
-            <div id="menuButtons">
+            <div className="menuButtons">
                 <Box display="flex" justifyContent="center">
                     <Box mr={buttonMargin}>
                         <Button className="button"

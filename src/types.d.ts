@@ -7,9 +7,7 @@ interface Overlay {
     triggerOverlay: (component: React.FC<{}>) => void
 }
 
-interface ModalContent {
-    title: string,
-    imagePaths: string[],
+interface Links {
     gitLink: string,
-    description: string
+    linkedinLink: string
 }

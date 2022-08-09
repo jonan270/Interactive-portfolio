@@ -4,7 +4,17 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close"
 import "../styles/overlay.scss"
 
-const TopBarPhone: React.FC<{}> = () => {
+import { HashLink } from "react-router-hash-link";
+import GitIcon from "@mui/icons-material/GitHub"
+import { LinkedIn } from "@mui/icons-material";
+import Box from "@mui/material/Box";
+
+interface Props {
+    links: Links
+}
+
+const TopBarPhone: React.FC<Props> = ({links}) => {
+    const buttonMargin: number = 2;
 
     // Hamburger menu displayed on top left on phones
     const [showMenu, setMenu] = useState(false);
@@ -23,6 +33,57 @@ const TopBarPhone: React.FC<{}> = () => {
                                 <CloseIcon/>
                         </IconButton>
                     </div>
+                    <div className="menuButtons--phoneMenu">
+                        <Box textAlign="center">
+                            <Box display="flex" justifyContent="center">
+                                <Box mb={buttonMargin}>
+                                    <a href={links.gitLink} target="_blank" rel="noreferrer">
+                                        <IconButton
+                                            color="primary"
+                                            aria-label="Visit GitHub page"
+                                            component="label">
+                                                <GitIcon/>
+                                        </IconButton>
+                                    </a>
+                                </Box>
+                                <Box mb={buttonMargin}>
+                                    <a href={links.linkedinLink} target="_blank" rel="noreferrer">
+                                        <IconButton
+                                            onClick={() => console.log("Linking to GitHub...")}
+                                            color="primary"
+                                            aria-label="Visit LinkedIn profile"
+                                            component="label">
+                                                <LinkedIn/>
+                                        </IconButton>
+                                    </a>
+                                </Box>
+                            </Box>
+                            <Box mb={buttonMargin}>
+                                <Button className="button"
+                                variant="contained"
+                                component={HashLink}
+                                smooth to="/#about">
+                                    About me
+                                </Button>
+                            </Box>
+                            <Box mb={buttonMargin}>
+                                <Button className="button"
+                                variant="contained"
+                                component={HashLink}
+                                smooth to="/#projects">
+                                    Project showroom
+                                </Button>
+                            </Box>
+                            <Box mb={buttonMargin}>
+                                <Button className="button"
+                                    variant="contained"
+                                    component={HashLink}
+                                    smooth to="/#experience">
+                                        Experience
+                                </Button>
+                            </Box>
+                        </Box> 
+                    </div>
                 </div>
             </div>
         )
@@ -30,13 +91,13 @@ const TopBarPhone: React.FC<{}> = () => {
 
     return(
         <div>
-        {menu}
+        {menu} {/* Either menu JSX element above or nothing */}
             <nav className="topBar--phone">
-                <div id="hyperButtons">
+                <div className="hyperButtons">
                     <IconButton
                         onClick={() => setMenu(prev => !prev)}
                         color="primary"
-                        aria-label="Visit GitHub page"
+                        aria-label="Menu"
                         component="label">
                             <MenuIcon/>
                     </IconButton>
