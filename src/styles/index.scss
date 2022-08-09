@@ -17,12 +17,25 @@ Button {
     &--phone {
         @extend .topBar;
         height: 60px;
+
+        h1 {
+            color: $bright-color;
+            font-size: min(20px, 6vw) !important;
+        }
+
+        p {
+            font-size: min(8px, 2vw) !important;
+        }
     }
 }
 
-#titleText {
+.titleText {
     text-align: center;
     line-height: 0;
+    &--phone {
+        @extend .titleText;
+        padding: 10px;
+    }
 }
 
 #hyperButtons {
@@ -98,9 +111,15 @@ iframe {
     color: $accent-color;
     font-size: 1.5vh;
 }
-.topBar h1 {
-    color: $bright-color;
-    font-size: 5vh;
+h1 {
+    .topBar & {
+        color: $bright-color;
+        font-size: 5vh;
+    }
+
+    #content & {
+        color: $accent-color;
+    }
 }
 
 .chapter {
@@ -110,7 +129,4 @@ iframe {
 #content p {
     color: $dark-color;
     font-size: min(18px, 3vw);
-}
-#content h1 {
-    color: $accent-color;
 }

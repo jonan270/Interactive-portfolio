@@ -5,23 +5,23 @@ import CloseIcon from "@mui/icons-material/Close"
 import "../styles/overlay.scss"
 
 const TopBarPhone: React.FC<{}> = () => {
+
+    // Hamburger menu displayed on top left on phones
     const [showMenu, setMenu] = useState(false);
     let menu: JSX.Element | undefined = undefined;
 
     if(showMenu) {
         menu = (
-            <div className="phoneMenuWrapper">
-                <div className="background--phoneMenu" onClick={() => setMenu(false)}>
-                    <div className="foreground--phoneMenu">
-                        <div className="overlayButtonContainer--phoneMenu">
-                            <IconButton
-                                onClick={() => setMenu(false)}
-                                color="primary"
-                                aria-label="Close menu"
-                                component="label">
-                                    <CloseIcon/>
-                            </IconButton>
-                        </div>
+            <div className="background--phoneMenu" onClick={() => setMenu(false)}>
+                <div className="foreground--phoneMenu">
+                    <div className="overlayButtonContainer--phoneMenu">
+                        <IconButton
+                            onClick={() => setMenu(false)}
+                            color="primary"
+                            aria-label="Close menu"
+                            component="label">
+                                <CloseIcon/>
+                        </IconButton>
                     </div>
                 </div>
             </div>
@@ -40,6 +40,10 @@ const TopBarPhone: React.FC<{}> = () => {
                         component="label">
                             <MenuIcon/>
                     </IconButton>
+                </div>
+                <div className="titleText--phone">
+                    <h1>Jonathan Andersson</h1>
+                    <p>5th year M.Sc Student in Media Technology</p>
                 </div>
             </nav>
         </div>

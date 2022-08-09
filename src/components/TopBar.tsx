@@ -4,7 +4,7 @@ import TopBarPhone from './TopBarPhone';
 
 const TopBar: React.FC<{}> = () => {
     const isDesktopOrLaptop: boolean = useMediaQuery({
-        query: '(min-width: 1224px)'
+        query: '(min-width: 720px)'
     })
     return isDesktopOrLaptop ? <TopBarDesktop/> : <TopBarPhone/>;
 }

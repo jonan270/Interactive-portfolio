@@ -38,7 +38,7 @@ const TopBarDesktop: React.FC<{}> = () => {
                     </IconButton>
                 </a>
             </div>
-            <div id="titleText">
+            <div className="titleText">
                 <h1>Jonathan Andersson</h1>
                 <p>5th year M.Sc Student in Media Technology</p>
             </div>
