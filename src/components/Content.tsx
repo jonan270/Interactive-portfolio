@@ -1,11 +1,16 @@
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Experience from "./Experience";
-const Content: React.FC<{}> = () => {
+
+interface Props {
+    overlay: Overlay
+}
+
+const Content: React.FC<Props> = ({overlay}) => {
     return(
         <div id="content" className="chapter">
             <AboutMe/>
-            <Projects/>
+            <Projects overlay={overlay}/>
             <Experience/>
         </div>
     )

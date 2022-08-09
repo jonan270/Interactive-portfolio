@@ -1,6 +1,11 @@
 import TopBar from "./components/TopBar";
 import Content from "./components/Content";
 import {BrowserRouter as Router} from "react-router-dom";
+import React, { useState } from "react"
+import GlobalIllumination from "./projects/GlobalIllumination";
+
+import Overlay from "./components/Overlay";
+import "./styles/overlay.scss";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -17,12 +22,40 @@ const theme = createTheme({
 });
 
 function App() {
+  // State to handle wheter overlay should be displayed or not
+  const [showOverlay, setOverlay] = useState(false);
+
+  // Trigger the overlay with the provided child component
+  const triggerOverlay = (component: React.FC<{}>) => {
+    console.log("Image clicked");
+    setContent({
+        showOverlay: showOverlay,
+        setOverlay: setOverlay,
+        childComponent: component,
+        triggerOverlay: triggerOverlay
+    });
+    setOverlay(prev => !prev);
+  }
+
+  // State to handle the childcomponent of overlay
+  const [content, setContent] = useState({
+      showOverlay: showOverlay,
+      setOverlay: setOverlay,
+      childComponent: GlobalIllumination,
+      triggerOverlay: triggerOverlay
+  });
+  content.showOverlay = showOverlay;
+  content.setOverlay = setOverlay;
+  content.triggerOverlay = triggerOverlay;
+
+  
   return (
     <ThemeProvider theme={theme}>
       <div>
         <Router>
+          <Overlay overlay={content}/>
           <TopBar/>
-          <Content/>
+          <Content overlay={content}/>
         </Router>
       </div>
     </ThemeProvider>

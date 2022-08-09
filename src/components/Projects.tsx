@@ -3,36 +3,16 @@ import caps_img from "../images/caps.png"
 import raid_img from "../images/table_raid.png"
 import Overlay from "./Overlay"
 import "../styles/images.scss"
-import React, { useState } from "react"
 
 import Experience from "./Experience"
 import GlobalIllumination from "../projects/GlobalIllumination"
 import TableRaid from "../projects/TableRaid"
 
-const Projects: React.FC<{}> = () => {
-    // State to handle wheter overlay should be displayed or not
-    const [showOverlay, setOverlay] = useState(false);
+interface Props {
+    overlay: Overlay
+}
 
-    // State to handle the childcomponent of overlay
-    const [content, setContent] = useState({
-        showOverlay: showOverlay,
-        setOverlay: setOverlay,
-        childComponent: GlobalIllumination
-    });
-    content.showOverlay = showOverlay;
-    content.setOverlay = setOverlay;
-    
-    // Trigger the overlay with the provided child component
-    const triggerOverlay = (component: React.FC<{}>) => {
-        console.log("Image clicked");
-        setContent({
-            showOverlay: showOverlay,
-            setOverlay: setOverlay,
-            childComponent: component
-        });
-        setOverlay(prev => !prev);
-    }
-
+const Projects: React.FC<Props> = ({overlay}) => {
     return(
         <div id="projects" className="chapter">
             <h1>Project showroom</h1>
@@ -40,13 +20,12 @@ const Projects: React.FC<{}> = () => {
                 Below you will find some especially interesting projects from
                 my study time. Have a look around!
             </p>
-            <Overlay overlay={content}/>
             <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={globalIllumination_img}
                     alt="global_illumination"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => triggerOverlay(GlobalIllumination)}>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(GlobalIllumination)}>
                         <p>Advanced Global Illumination</p>
                     </div>
                 </div>
@@ -54,7 +33,7 @@ const Projects: React.FC<{}> = () => {
                     <img src={caps_img}
                     alt="bottlecap_image"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => triggerOverlay(Experience)}>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(Experience)}>
                         <p>Image reproduction using bottlecaps</p>
                     </div>
                 </div>
@@ -64,7 +43,7 @@ const Projects: React.FC<{}> = () => {
                     <img src={raid_img}
                     alt="tableraid"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => triggerOverlay(TableRaid)}>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
                         <p>Table Raid - a turn based game in VR</p>
                     </div>
                 </div>
