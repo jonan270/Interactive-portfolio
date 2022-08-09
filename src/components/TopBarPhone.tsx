@@ -1,35 +1,48 @@
 import { Button, IconButton } from "@mui/material";
-import { HashLink } from "react-router-hash-link";
-import GitIcon from "@mui/icons-material/GitHub"
-import { LinkedIn } from "@mui/icons-material";
-import Box from "@mui/material/Box";
 import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
+import CloseIcon from "@mui/icons-material/Close"
+import "../styles/overlay.scss"
 
-// HashLink menu inspiration:
-// https://github.com/mohdraqif/LA-16, 
-// https://www.youtube.com/watch?v=d0c4aPO9PNg
 const TopBarPhone: React.FC<{}> = () => {
-    const buttonMargin: number = 2;
+    const [showMenu, setMenu] = useState(false);
+    let menu: JSX.Element | undefined = undefined;
 
-    const link_linkedin: string = 
-        "https://www.linkedin.com/in/jonathan-andersson-43488a209";
-
-    const link_git: string =
-        "https://github.com/jonan270";
+    if(showMenu) {
+        menu = (
+            <div className="phoneMenuWrapper">
+                <div className="background--phoneMenu" onClick={() => setMenu(false)}>
+                    <div className="foreground--phoneMenu">
+                        <div className="overlayButtonContainer--phoneMenu">
+                            <IconButton
+                                onClick={() => setMenu(false)}
+                                color="primary"
+                                aria-label="Close menu"
+                                component="label">
+                                    <CloseIcon/>
+                            </IconButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     return(
-        <nav className="topBar--phone">
-            <div id="hyperButtons">
-                <a href={link_git} target="_blank" rel="noreferrer">
+        <div>
+        {menu}
+            <nav className="topBar--phone">
+                <div id="hyperButtons">
                     <IconButton
+                        onClick={() => setMenu(prev => !prev)}
                         color="primary"
                         aria-label="Visit GitHub page"
                         component="label">
                             <MenuIcon/>
                     </IconButton>
-                </a>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </div>
     )
 }
 

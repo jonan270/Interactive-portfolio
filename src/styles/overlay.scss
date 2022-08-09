@@ -13,6 +13,10 @@
     background-color: rgba(0,0,0,0.8); /* Black background with opacity */
     z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+    &--phoneMenu {
+        @extend .background;
+        justify-content: unset;
+    }
 }
 
 .foreground {
@@ -28,6 +32,12 @@
     overflow-y: scroll;
 
     cursor: default;
+    &--phoneMenu {
+        @extend .foreground;
+        padding: 10px;
+        width: 50%;
+        border-radius: 0;
+    }
 }
 
 .fgContent {
@@ -45,4 +55,8 @@
 
     border-radius: 10px;
     background-color: $dark-color;
+    &--phoneMenu {
+        @extend .overlayButtonContainer;
+        width: 50%;
+    }
 }
