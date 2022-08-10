@@ -32,10 +32,10 @@ const GlobalIllumination: React.FC<{}> = () => {
                     />
                 </div>
             </div>
-            <h2>
+            <h3>
                 The images show some results obtained when varying the amount of sampling
                 rays per pixel used by the Monte Carlo raytracing engine.
-            </h2>
+            </h3>
             <p>
                 The implementation is a total from scratch (except for one library used to
                 produce a bitmap image format) implementation of a Monte Carlo raytracing

@@ -1,6 +1,5 @@
 import profile from "../images/profile.jpg"
 import "../styles/images.scss"
-import "../styles/about.scss"
 import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";

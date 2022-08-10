@@ -12,6 +12,7 @@ const Content: React.FC<Props> = ({overlay}) => {
             <AboutMe/>
             <Projects overlay={overlay}/>
             <Experience/>
+            <div id="bottomOfPage"></div>
         </div>
     )
 }
