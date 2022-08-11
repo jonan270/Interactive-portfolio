@@ -57,7 +57,7 @@ const TopBarDesktop: React.FC<Props> = ({links}) => {
                             Project showroom
                         </Button>
                     </Box>
-                    <Box mr={buttonMargin}>
+                    <Box mr={0}>
                         <Button className="button"
                             variant="contained"
                             component={HashLink}
