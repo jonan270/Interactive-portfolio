@@ -69,9 +69,15 @@ Button {
     padding: 0 15vw 0 15vw;
 }
 
+#rocketLaunchPad {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
 #bottomOfPage {
     background-color: $bright-color;
-    height: 15vw;
+    height: 15vh;
 }
 
 // For the symbols with adjacent text
