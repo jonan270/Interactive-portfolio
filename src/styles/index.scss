@@ -97,29 +97,30 @@ Button {
 
 p {
     color: $bright-color;
-    font-family:monospace;
+    font-family: monospace;
+    font-size: min(18px, 3vw);
 }
 
 h1 {
     color: $accent-color;
-    font-family:monospace;
+    font-family: $roboto-font;
 }
 
 h2 {
     color: $accent-color;
-    font-family:monospace;
+    font-family: $roboto-font;
     font-size: min(24px, 4vw);
 }
 
 h3 {
     color: $accent-color;
-    font-family:monospace;
+    font-family: monospace;
     font-size: min(18px, 3vw);
 }
 
 a {
     color: $secondary-color;
-    font-family:monospace;
+    font-family: monospace;
     font-size: min(18px, 3vw);
 }
 
@@ -161,6 +162,7 @@ iframe {
 h1 {
     .topBar & {
         color: $bright-color;
+        font-family: monospace;
         font-size: 5vh;
     }
 
@@ -175,5 +177,4 @@ h1 {
 
 #content p {
     color: $dark-color;
-    font-size: min(18px, 3vw);
 }

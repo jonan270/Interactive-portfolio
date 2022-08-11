@@ -15,7 +15,7 @@ interface Props {
 const Projects: React.FC<Props> = ({overlay}) => {
     return(
         <div id="projects" className="chapter">
-            <h1>Project showroom</h1>
+            <h1>PROJECT SHOWROOM</h1>
             <p>
                 Below you will find some especially interesting projects from
                 my study time. Have a look around!
@@ -26,7 +26,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     alt="global_illumination"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(GlobalIllumination)}>
-                        <p>Advanced Global Illumination</p>
+                        <p>ADVANCED GLOBAL ILLUMINATION</p>
                     </div>
                 </div>
                 <div className="showcaseItem">
@@ -34,7 +34,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     alt="bottlecap_image"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(Experience)}>
-                        <p>Image reproduction using bottlecaps</p>
+                        <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     alt="tableraid"
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
-                        <p>Table Raid - a turn based game in VR</p>
+                        <p>TABLE RAID - A TURN BASED GAME IN VR</p>
                     </div>
                 </div>
             </div>

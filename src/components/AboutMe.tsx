@@ -8,7 +8,7 @@ const AboutMe: React.FC<{}> = () => {
     return(
         <div id = "about" className="chapter">
             <img src={profile} alt="profile_image" id='profileImg'/>
-            <h1>About me</h1>
+            <h1>ABOUT ME</h1>
             <div className="iconTextRow">
                 <Phone color="primary"/>
                 <p className="iconText">+46703107498</p>

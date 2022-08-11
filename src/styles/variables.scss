@@ -2,6 +2,13 @@
 // White flavour
 // #FFFBFE
 
+// Roboto font from google fonts
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// $roboto-font: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+$roboto-font: 'Roboto', sans-serif;
+
 $dark-color: #282C34;
 $bright-color: #FFFBFE;
 $accent-color: #E06C75;

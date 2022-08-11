@@ -48,6 +48,7 @@ $showcase-padding: 5px;
 }
 
 .showcaseOverlay p {
+    font-family: $roboto-font;
     position: absolute;
     top: calc(50% - 4 * $showcase-padding);
     left: 50%;

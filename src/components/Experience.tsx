@@ -3,7 +3,7 @@ import InfoIcon from '@mui/icons-material/Info';
 const Experience: React.FC<{}> = () => {
     return(
         <div id="experience" className="chapter">
-            <h1>Experience</h1>
+            <h1>EXPERIENCE</h1>
             <p>
                 Below you will find some information about my proffesional
                 experience.
