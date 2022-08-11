@@ -26,7 +26,7 @@ const Content: React.FC<Props> = ({overlay}) => {
                         <RocketLaunchIcon fontSize="large" />
                     </IconButton>
                 }
-                // variant="contained"
+                variant="outlined"
                 size="large"
                 component={HashLink}
                 smooth to="/#about"

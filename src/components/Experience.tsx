@@ -36,11 +36,40 @@ const Experience: React.FC<{}> = () => {
             <ul>
                 <li><p>Machine learning in Python using PyTorch.</p></li>
                 <li><p>Implementing pre-trained neural network models using C#.</p></li>
-                <li><p>CI/CD in GitLab using Docker.</p></li>
+                <li><p>CI/CD in GitLab using Docker images.</p></li>
                 <li><p>Unit testing.</p></li>
             </ul>
             <hr />
-            <h2>Tekniksprånget</h2>
+            <h2>CHIEF OF ALUMNI AND INDUSTRY CONTACTS</h2>
+            <div className="iconTextRow">
+                <AccessTimeFilledIcon color="primary"/>
+                <p className="iconText">2021-07 / 2022-06</p>
+            </div>
+            <div className="iconTextRow">
+                <InfoIcon color="primary"/>
+                <a
+                className="iconText"
+                href="https://medieteknik.nu/"
+                target="_blank" rel="noreferrer"
+                >
+                    Read more about MT-sektionen here
+                </a>
+            </div>
+            <p>
+                During my fourth year at university I was part of the student
+                association Medietekniksektionen who manage most events
+                and other things directly related to our specific degree. 
+            </p>
+            <h3>
+                Some of my duties and learning experiences:
+            </h3>
+            <ul>
+                <li><p>Multinational communication with people from different industry sectors.</p></li>
+                <li><p>Planning big events and attending regular meetings.</p></li>
+                <li><p>Learning about different industry sectors from alumni.</p></li>
+            </ul>
+            <hr />
+            <h2>TEKNIKSPRÅNGET</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
                 <p className="iconText">2018-02 / 2018-06</p>
