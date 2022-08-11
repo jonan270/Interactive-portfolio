@@ -8,7 +8,7 @@ const Experience: React.FC<{}> = () => {
                 Below you will find some information about my proffesional
                 experience.
             </p>
-            <br />
+            <hr />
             <h2>MTEK</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
@@ -39,7 +39,7 @@ const Experience: React.FC<{}> = () => {
                 <li><p>CI/CD in GitLab using Docker.</p></li>
                 <li><p>Unit testing.</p></li>
             </ul>
-            <br />
+            <hr />
             <h2>Tekniksprånget</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
@@ -71,6 +71,7 @@ const Experience: React.FC<{}> = () => {
                 <li><p>Investigate effects of individual billing for water and electricity.</p></li>
                 <li><p>Learning about teamwork in an office environment.</p></li>
             </ul>
+            <hr />
         </div>
     )
 }

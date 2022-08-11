@@ -3,6 +3,7 @@ import "../styles/images.scss"
 import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 const AboutMe: React.FC<{}> = () => {
     return(
@@ -27,11 +28,17 @@ const AboutMe: React.FC<{}> = () => {
                     M.Sc in Media Technology
                 </a>
             </div>
+            <hr/>
             <p>
                 A 24 year old social nerd who loves video games and guitars.
                 Currently I am mostly looking at options for my master thesis,
                 however feel free to reach out about anything!
             </p>
+            <div className="iconTextRow">
+                <TerminalIcon color="primary"/>
+                <p className="iconText">Favorite programming languages:</p>
+                <p className="iconText--nextLine">C++, C#, Java, Python, GLSL</p>
+            </div>
         </div>
     )
 }

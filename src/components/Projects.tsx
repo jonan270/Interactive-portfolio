@@ -1,7 +1,6 @@
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps.png"
 import raid_img from "../images/table_raid.png"
-import Overlay from "./Overlay"
 import "../styles/images.scss"
 
 import Experience from "./Experience"
@@ -21,6 +20,16 @@ const Projects: React.FC<Props> = ({overlay}) => {
                 my study time. Have a look around!
             </p>
             <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={raid_img}
+                    alt="tableraid"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
+                        <p>TABLE RAID - A TURN BASED GAME IN VR</p>
+                    </div>
+                </div>
+            </div>
+            <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={globalIllumination_img}
                     alt="global_illumination"
@@ -38,25 +47,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     </div>
                 </div>
             </div>
-            <div className="showcaseRow">
-                <div className="showcaseItem--large">
-                    <img src={raid_img}
-                    alt="tableraid"
-                    className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
-                        <p>TABLE RAID - A TURN BASED GAME IN VR</p>
-                    </div>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus nisl
-                sed lacus gravida vehicula. Nunc nec erat ut leo eleifend accumsan. Aenean
-                eget nisi ac dui imperdiet cursus. Sed sit amet mattis ex.
-                
-                Aliquam erat volutpat. Nullam finibus vel augue nec placerat. Aliquam vitae
-                risus ac elit semper imperdiet nec vel augue. Mauris et suscipit ipsum.
-                Donec pellentesque in sapien eu tincidunt. Nam ac eros non libero tempus blandit.
-                Praesent non felis ac lorem consequat vulputate.
-                Aenean at tristique justo, et efficitur libero. </p>
+            <h3>Click the images to learn more!</h3>
         </div>
     )
 }

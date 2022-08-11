@@ -93,6 +93,10 @@ Button {
     font-size: min(2.7vw, 20px) !important;
     margin: 10px;
     margin-left: 10px;
+    &--nextLine {
+        @extend .iconText;
+        margin-left: 35px;
+    }
 }
 
 p {
@@ -126,6 +130,16 @@ a {
 
 ul {
     color: $accent-color;
+}
+
+hr {
+    color: $accent-color;
+    background-color: $accent-color;
+    height: 2px;
+    border-width: 0;
+    border-radius: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 ul p {
