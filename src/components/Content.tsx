@@ -23,7 +23,7 @@ const Content: React.FC<Props> = ({overlay}) => {
                     color="primary"
                     aria-label="TO THE TOP"
                     component="label">
-                        <RocketLaunchIcon fontSize="large" />
+                        <RocketLaunchIcon fontSize="large"/>
                     </IconButton>
                 }
                 variant="outlined"

@@ -6,11 +6,13 @@ import report from "../reports/montecarlo.pdf"
 const GlobalIllumination: React.FC<{}> = () => {
     return(
         <div>
-            <h1>Advanced Global Illumination Rendering Engine</h1>
+            <h1>ADVANCED GLOBAL ILLUMINATION RENDERING ENGINE</h1>
             <p>
-                A particularly interesting course: "TNCG15 - Advanced Global Illumination
-                and Rendering" allowed me and my friend Tilda to deep dive into the world
-                of raytracing.
+                No, these images are <strong><u>not</u></strong> made using 3d modelling software.
+                They are the product of a particularly interesting course:
+                "TNCG15 - Advanced Global Illumination and Rendering"
+                which allowed me and my friend Tilda to deep dive into
+                the world of raytracing.
             </p>
             <div className="showcaseRow">
                 <div className="showcaseItem">
@@ -37,12 +39,12 @@ const GlobalIllumination: React.FC<{}> = () => {
                 rays per pixel used by the Monte Carlo raytracing engine.
             </h3>
             <p>
-                The implementation is a total from scratch (except for one library used to
-                produce a bitmap image format) implementation of a Monte Carlo raytracing
-                rendering engine written in C++. The solution handles different material
-                types aswell as light sources and mirror surfaces! Other than the pretty
-                results presented above, the project also provided some hilarious bugged
-                out images.
+                The implementation is a total from scratch (except for one library which
+                was used to produce a bitmap image format) implementation of a Monte Carlo
+                raytracing rendering engine written in C++. The solution handles different
+                material properties aswell as light sources and mirror surfaces!
+                Other than the pretty results presented above, the project also provided
+                some hilarious bugged out images.
             </p>
             <a href={report}>Click here to read the full report</a>
         </div>

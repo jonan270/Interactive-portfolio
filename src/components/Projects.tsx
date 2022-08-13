@@ -1,11 +1,12 @@
 import globalIllumination_img from "../images/400samples.bmp"
-import caps_img from "../images/caps.png"
+import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
 import "../styles/images.scss"
 
-import Experience from "./Experience"
-import GlobalIllumination from "../projects/GlobalIllumination"
+import BottleCaps from "../projects/BottleCaps"
 import TableRaid from "../projects/TableRaid"
+import GlobalIllumination from "../projects/GlobalIllumination"
+
 
 interface Props {
     overlay: Overlay
@@ -42,12 +43,12 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     <img src={caps_img}
                     alt="bottlecap_image"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(Experience)}>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BottleCaps)}>
                         <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
                     </div>
                 </div>
             </div>
-            <h3>Click the images to learn more!</h3>
+            <h3>Click the images for more information!</h3>
         </div>
     )
 }

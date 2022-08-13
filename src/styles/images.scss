@@ -21,6 +21,10 @@ $showcase-padding: 5px;
         @extend .showcaseItem;
         flex: 100%;
     }
+    &--single {
+        @extend .showcaseItem;
+        text-align: center;
+    }
 }
 
 .showcaseItem:hover .showcaseOverlay {
@@ -31,6 +35,11 @@ $showcase-padding: 5px;
     width: 100%;
     vertical-align: top;
     border-radius: 10px;
+    &--single {
+        @extend .showcaseImage;
+        width: 50%;
+        margin: auto;
+    }
 }
 
 .showcaseOverlay {

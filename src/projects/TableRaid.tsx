@@ -5,7 +5,7 @@ const TableRaid: React.FC<{}> = () => {
 
     return(
         <div>
-            <h1>Table Raid - a turn based game in VR</h1>
+            <h1>TABLE RAID - A TURN BASED GAME IN VR</h1>
             <p>
                 After a few years of engineering studies, it was time for the
                 Bachelor's project. A large project which would consume most study
