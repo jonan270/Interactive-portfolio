@@ -51,7 +51,7 @@
 .overlayButtonContainer {
     position: fixed;
     z-index: 3;
-    width: 75%;
+    width: calc(75% - 20px);
 
     border-radius: 10px;
     background-color: $dark-color;
