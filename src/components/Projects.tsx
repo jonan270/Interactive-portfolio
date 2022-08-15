@@ -1,6 +1,8 @@
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
+import ux_img from "../images/ux.png"
+
 import "../styles/images.scss"
 
 import BottleCaps from "../projects/BottleCaps"
@@ -49,6 +51,17 @@ const Projects: React.FC<Props> = ({overlay}) => {
                 </div>
             </div>
             <h3>Click the images for more information!</h3>
+            <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={ux_img}
+                    alt="ux_image"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
+                        <p>MATPLAN - A PURE UX PROJECT</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Click the images to learn more!</h3>
         </div>
     )
 }
