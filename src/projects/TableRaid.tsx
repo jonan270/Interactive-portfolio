@@ -25,7 +25,9 @@ const TableRaid: React.FC<{}> = () => {
                 <li><p>Gesture tracking.</p></li>
                 <li><p>Turn based combat on an environment based map.</p></li>
             </ul>
-            <a href={report}>Click here to read the full report</a>
+            <a href={report} target="_blank" rel="noreferrer">
+                Click here to read the full report
+            </a>
         </div>
     )
 }

@@ -8,6 +8,7 @@ import "../styles/images.scss"
 import BottleCaps from "../projects/BottleCaps"
 import TableRaid from "../projects/TableRaid"
 import GlobalIllumination from "../projects/GlobalIllumination"
+import MatPlan from "../projects/MatPlan"
 
 
 interface Props {
@@ -50,13 +51,12 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     </div>
                 </div>
             </div>
-            <h3>Click the images for more information!</h3>
             <div className="showcaseRow">
                 <div className="showcaseItem--large">
                     <img src={ux_img}
                     alt="ux_image"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(MatPlan)}>
                         <p>MATPLAN - A PURE UX PROJECT</p>
                     </div>
                 </div>

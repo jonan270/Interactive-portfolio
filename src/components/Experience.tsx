@@ -1,6 +1,14 @@
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
 const Experience: React.FC<{}> = () => {
+    
+    const koenigseggLink: string = 
+        "https://www.koenigsegg.com/"
+    const cakeLink: string = 
+        "https://ridecake.com"
+    const swegonLink: string = 
+        "https://www.swegon.com"
+    
     return(
         <div id="experience" className="chapter">
             <h1>EXPERIENCE</h1>
@@ -25,9 +33,15 @@ const Experience: React.FC<{}> = () => {
                 </a>
             </div>
             <p>
-                Most of my time at MTEK has been spent as a summer intern,
-                but I did some remote work at the beginning of my fourth
-                year at university.
+                I came to MTEK as a summer intern during 2021 and
+                when they reached out and asked if I wanted to return
+                for 2022 I gladly agreed. I also did some remote work
+                for MTEK during the beginning of the fall semester 2021.
+                MTEK provides software for optimizing production in industry
+                environments. Their software is used by <a href={koenigseggLink} target="_blank" rel="noreferrer">
+                Koenigsegg</a>, <a href={swegonLink} target="_blank" rel="noreferrer">
+                Swegon</a>, <a href={cakeLink} target="_blank" rel="noreferrer">
+                Cake</a> and others.
             </p>
             <h3>
                 Some of my duties and learning experiences:

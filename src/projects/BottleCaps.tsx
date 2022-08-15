@@ -100,7 +100,9 @@ const BottleCaps: React.FC<{}> = () => {
                     </a>
                 </li>
             </ul>
-            <a href={report}>Click here to read the full report</a>
+            <a href={report} target="_blank" rel="noreferrer">
+                Click here to read the full report
+            </a>
         </div>
     )
 }

@@ -46,7 +46,9 @@ const GlobalIllumination: React.FC<{}> = () => {
                 Other than the pretty results presented above, the project also provided
                 some hilarious bugged out images.
             </p>
-            <a href={report}>Click here to read the full report</a>
+            <a href={report} target="_blank" rel="noreferrer">
+                Click here to read the full report
+            </a>
         </div>
     )
 }

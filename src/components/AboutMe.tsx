@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";
 import TerminalIcon from '@mui/icons-material/Terminal';
+import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 
 const AboutMe: React.FC<{}> = () => {
     return(
@@ -38,6 +39,11 @@ const AboutMe: React.FC<{}> = () => {
                 <TerminalIcon color="primary"/>
                 <p className="iconText">Favorite programming languages:</p>
                 <p className="iconText--nextLine">C++, C#, Java, Python, GLSL</p>
+            </div>
+            <div className="iconTextRow">
+                <HomeRepairServiceIcon color="primary"/>
+                <p className="iconText">Other skills:</p>
+                <p className="iconText--nextLine">Git, Linux, Scrum, maths and engineering</p>
             </div>
         </div>
     )
