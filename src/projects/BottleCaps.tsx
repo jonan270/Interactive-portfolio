@@ -22,7 +22,7 @@ const BottleCaps: React.FC<{}> = () => {
             <div className="showcaseRow">
                 <div className="showcaseItem--single">
                     <img src={caps_closeup}
-                    alt="Zoomed in image from a reproduction"
+                    alt="zoomed_img"
                     className="showcaseImage--single"
                     />
                     <h3>
@@ -33,7 +33,7 @@ const BottleCaps: React.FC<{}> = () => {
             <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={original_me}
-                    alt="Original image of me"
+                    alt="me_img"
                     className="showcaseImage"
                     />
                 </div>
@@ -42,7 +42,7 @@ const BottleCaps: React.FC<{}> = () => {
                 </div>
                 <div className="showcaseItem">
                     <img src={caps_me}
-                    alt="Reproduced image of me"
+                    alt="me_repro_img"
                     className="showcaseImage"
                     />
                 </div>
@@ -50,7 +50,7 @@ const BottleCaps: React.FC<{}> = () => {
             <div className="showcaseRow">
                 <div className="showcaseItem">
                     <img src={original_landscape}
-                    alt="Original image of landscape"
+                    alt="landscape_img"
                     className="showcaseImage"
                     />
                 </div>
@@ -59,7 +59,7 @@ const BottleCaps: React.FC<{}> = () => {
                 </div>
                 <div className="showcaseItem">
                     <img src={caps_landscape}
-                    alt="Reproduced image of landscape"
+                    alt="landscape_repro_img"
                     className="showcaseImage"
                     />
                 </div>
