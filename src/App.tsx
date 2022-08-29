@@ -1,6 +1,6 @@
 import TopBar from "./components/TopBar";
 import Content from "./components/Content";
-import {BrowserRouter as Router} from "react-router-dom";
+import {HashRouter as Router} from "react-router-dom";
 import React, { useState } from "react"
 import GlobalIllumination from "./projects/GlobalIllumination";
 
