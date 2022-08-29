@@ -8,14 +8,17 @@ const Experience: React.FC<{}> = () => {
         "https://ridecake.com"
     const swegonLink: string = 
         "https://www.swegon.com"
+        
     
     return(
         <div id="experience" className="chapter">
             <h1>EXPERIENCE</h1>
             <p>
-                Below you will find some information about my professional
+                Below you will find some information about my previous
                 experience.
             </p>
+            <br />
+            <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
             <h2>MTEK</h2>
             <div className="iconTextRow">
@@ -25,9 +28,9 @@ const Experience: React.FC<{}> = () => {
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
                 <a
-                className="iconText"
-                href="https://mtek.se/"
-                target="_blank" rel="noreferrer"
+                    className="iconText"
+                    href="https://mtek.se/"
+                    target="_blank" rel="noreferrer"
                 >
                     Read more about MTEK here
                 </a>
@@ -54,6 +57,40 @@ const Experience: React.FC<{}> = () => {
                 <li><p>Unit testing.</p></li>
             </ul>
             <hr />
+            <h2>TEKNIKSPRÅNGET</h2>
+            <div className="iconTextRow">
+                <AccessTimeFilledIcon color="primary"/>
+                <p className="iconText">2018-02 / 2018-06</p>
+            </div>
+            <div className="iconTextRow">
+                <InfoIcon color="primary"/>
+                <a
+                    className="iconText"
+                    href="https://teknikspranget.se/om-teknikspranget/"
+                    target="_blank" rel="noreferrer"
+                >
+                    Read more about Tekniksprånget here
+                </a>
+            </div>
+            <p>
+                Tekniksprånget is a national project where different
+                employers in Sweden offer a four month internship for youth
+                with the goal of making more young people pursue higher
+                education. I did my internship at Sandvikenhus AB, which
+                is a public housing company.
+            </p>
+            <h3>
+                Some of my duties and learning experiences:
+            </h3>
+            <ul>
+                <li><p>Look into the environmental effects of solar panels.</p></li>
+                <li><p>Investigate effects of individual billing for water and electricity.</p></li>
+                <li><p>Learning about teamwork in an office environment.</p></li>
+            </ul>
+            <hr />
+            <br />
+            <h1>EXTRACURRICULAR EXPERIENCES</h1>
+            <hr />
             <h2>CHIEF OF ALUMNI AND INDUSTRY CONTACTS</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
@@ -62,9 +99,9 @@ const Experience: React.FC<{}> = () => {
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
                 <a
-                className="iconText"
-                href="https://medieteknik.nu/"
-                target="_blank" rel="noreferrer"
+                    className="iconText"
+                    href="https://medieteknik.nu/"
+                    target="_blank" rel="noreferrer"
                 >
                     Read more about MT-sektionen here
                 </a>
@@ -83,36 +120,35 @@ const Experience: React.FC<{}> = () => {
                 <li><p>Learning about different industry sectors from alumni.</p></li>
             </ul>
             <hr />
-            <h2>TEKNIKSPRÅNGET</h2>
+            <h2>PEER STUDENT AT MEDIETEKNIK</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
-                <p className="iconText">2018-02 / 2018-06</p>
+                <p className="iconText">2020-08 and 2021-08</p>
             </div>
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
                 <a
-                className="iconText"
-                href="https://teknikspranget.se/om-teknikspranget/"
-                target="_blank" rel="noreferrer"
+                    className="iconText"
+                    href="https://www.student.liu.se/studentstod/studenthalsan/fadder?l=sv"
+                    target="_blank" rel="noreferrer"
                 >
-                    Read more about Tekniksprånget here
+                    Read more about the work as a peer student here
                 </a>
             </div>
             <p>
-                Tekniksprånget is a national project where different
-                employers in Sweden offer a four month internship for youth
-                with the goal of making more young people pursue higher
-                education. I did my internship at Sandvikenhus AB, which
-                is a public housing company.
+                All student receptions at Linköping University are carefully planned
+                to make sure that the new students feel included and welcome at the
+                start of their education. A peer student is an older student who has
+                volunteered to help guide the newer students through the beginning 
+                weeks of university.
             </p>
             <h3>
                 Some of my duties and learning experiences:
             </h3>
-
             <ul>
-                <li><p>Look into the environmental effects of solar panels.</p></li>
-                <li><p>Investigate effects of individual billing for water and electricity.</p></li>
-                <li><p>Learning about teamwork in an office environment.</p></li>
+                <li><p>Help solving logistical issues.</p></li>
+                <li><p>Encourage and stimulate social interactions among the new students.</p></li>
+                <li><p>Offering guidance and answering questions about life at university in general.</p></li>
             </ul>
             <hr />
         </div>
