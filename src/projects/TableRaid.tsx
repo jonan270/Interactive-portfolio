@@ -8,7 +8,7 @@ const TableRaid: React.FC<{}> = () => {
             <h1>TABLE RAID - A TURN BASED GAME IN VR</h1>
             <p>
                 After a few years of engineering studies, it was time for the
-                Bachelor's project. A large project which would consume most study
+                Bachelor's project. A large project, which would consume most study
                 time for me and my group of five.
             </p>
             <div className="iframeWrapper">

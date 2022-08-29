@@ -42,9 +42,7 @@ const GlobalIllumination: React.FC<{}> = () => {
                 The implementation is a total from scratch (except for one library which
                 was used to produce a bitmap image format) implementation of a Monte Carlo
                 raytracing rendering engine written in C++. The solution handles different
-                material properties aswell as light sources and mirror surfaces!
-                Other than the pretty results presented above, the project also provided
-                some hilarious bugged out images.
+                material properties as well as light sources and mirror surfaces!
             </p>
             <a href={report} target="_blank" rel="noreferrer">
                 Click here to read the full report

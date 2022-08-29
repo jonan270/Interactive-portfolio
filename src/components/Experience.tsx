@@ -13,7 +13,7 @@ const Experience: React.FC<{}> = () => {
         <div id="experience" className="chapter">
             <h1>EXPERIENCE</h1>
             <p>
-                Below you will find some information about my proffesional
+                Below you will find some information about my professional
                 experience.
             </p>
             <hr />
@@ -100,9 +100,9 @@ const Experience: React.FC<{}> = () => {
             </div>
             <p>
                 Tekniksprånget is a national project where different
-                employers in Sweden offer 4 month internships to youth
+                employers in Sweden offer a four month internship for youth
                 with the goal of making more young people pursue higher
-                education. I did my internship at Sandvikenhus AB which
+                education. I did my internship at Sandvikenhus AB, which
                 is a public housing company.
             </p>
             <h3>
@@ -110,7 +110,7 @@ const Experience: React.FC<{}> = () => {
             </h3>
 
             <ul>
-                <li><p>Look into environmental effects of solar panels.</p></li>
+                <li><p>Look into the environmental effects of solar panels.</p></li>
                 <li><p>Investigate effects of individual billing for water and electricity.</p></li>
                 <li><p>Learning about teamwork in an office environment.</p></li>
             </ul>

@@ -11,11 +11,11 @@ const MatPlan: React.FC<{}> = () => {
         <div>
             <h1>MATPLAN - A PURE UX PROJECT</h1>
             <p>
-                I believe knowledge about UX is very useful skill for any type of developer. This is
+                I believe knowledge about UX is a very useful skill for any type of developer. This is
                 why I decided to read the most in depth UX course available on our program plan:
                 "TNM100 - Structural Methods for User Experience". Together with my group members
                 Elin and Miranda we set out to develop a UX prototype that would serve as a kind of
-                "pricerunner for groceries".
+                "Pricerunner for groceries".
 
             </p>
             <div className="showcaseRow">
