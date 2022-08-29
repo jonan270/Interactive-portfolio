@@ -43,18 +43,18 @@ const TopBarDesktop: React.FC<Props> = ({links}) => {
                 <Box display="flex" justifyContent="center">
                     <Box mr={buttonMargin}>
                         <Button className="button"
-                        variant="contained"
-                        component={HashLink}
-                        smooth to="/#about">
-                            About me
+                            variant="contained"
+                            component={HashLink}
+                            smooth to="/#about">
+                                About me
                         </Button>
                     </Box>
                     <Box mr={buttonMargin}>
                         <Button className="button"
-                        variant="contained"
-                        component={HashLink}
-                        smooth to="/#projects">
-                            Project showroom
+                            variant="contained"
+                            component={HashLink}
+                            smooth to="/#projects">
+                                Project showroom
                         </Button>
                     </Box>
                     <Box mr={0}>
