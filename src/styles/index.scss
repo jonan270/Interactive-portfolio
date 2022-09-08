@@ -99,6 +99,7 @@ Button {
     margin-left: 10px;
     &--nextLine {
         @extend .iconText;
+        margin-top: 0;
         margin-left: 35px;
     }
 }

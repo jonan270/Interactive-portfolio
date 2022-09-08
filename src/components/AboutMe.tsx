@@ -35,16 +35,19 @@ const AboutMe: React.FC<{}> = () => {
                 Currently I am mostly looking at options for my master thesis 
                 but feel free to reach out about anything!
             </p>
+
             <div className="iconTextRow">
                 <TerminalIcon color="primary"/>
                 <p className="iconText">Favorite programming languages:</p>
-                <p className="iconText--nextLine">C++, C#, Java, Python, GLSL</p>
             </div>
+            <p className="iconText--nextLine">C++, C#, Java, Python, GLSL</p>
+
             <div className="iconTextRow">
                 <HomeRepairServiceIcon color="primary"/>
                 <p className="iconText">Other skills:</p>
-                <p className="iconText--nextLine">Git, Linux, Scrum, maths and engineering</p>
             </div>
+            <p className="iconText--nextLine">Unity, Git, Linux, Scrum, maths and engineering</p>
+
         </div>
     )
 }
