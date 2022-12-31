@@ -20,6 +20,36 @@ const Experience: React.FC<{}> = () => {
             <br />
             <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
+            <h2>MASTER THESIS @GOODBYE KANSAS STUDIOS</h2>
+            <div className="iconTextRow">
+                <AccessTimeFilledIcon color="primary"/>
+                <p className="iconText">Currently</p>
+            </div>
+            <div className="iconTextRow">
+                <InfoIcon color="primary"/>
+                <a
+                    className="iconText"
+                    href="https://goodbyekansasstudios.com/"
+                    target="_blank" rel="noreferrer"
+                >
+                    Read more about Goodbye Kansas here
+                </a>
+            </div>
+            <p>
+                Goodbye Kansas is a VFX studio in Stockholm that works with film,
+                TV-series, games, gametrailers and commercials. My thesis work is
+                focused around procedurally generating pores and wrinkles for facial
+                3D models. More info will be posted in the future!
+            </p>
+            {/* <h3>
+                Some of my duties and learning experiences:
+            </h3>
+            <ul>
+                <li><p>Look into the environmental effects of solar panels.</p></li>
+                <li><p>Investigate effects of individual billing for water and electricity.</p></li>
+                <li><p>Learning about teamwork in an office environment.</p></li>
+            </ul> */}
+            <hr />
             <h2>MTEK</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>

@@ -32,8 +32,8 @@ const AboutMe: React.FC<{}> = () => {
             <hr/>
             <p>
                 A 24 year old social nerd who loves video games and guitars.
-                Currently I am mostly looking at options for my master thesis 
-                but feel free to reach out about anything!
+                Currently I am working on my engineering thesis which you can
+                read more about below.
             </p>
 
             <div className="iconTextRow">

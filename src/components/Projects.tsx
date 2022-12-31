@@ -1,3 +1,4 @@
+import larry_img from "../images/larry.png"
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
@@ -7,6 +8,7 @@ import "../styles/images.scss"
 
 import BottleCaps from "../projects/BottleCaps"
 import TableRaid from "../projects/TableRaid"
+import BotLarry from "../projects/BotLarry"
 import GlobalIllumination from "../projects/GlobalIllumination"
 import MatPlan from "../projects/MatPlan"
 
@@ -30,6 +32,24 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     className="showcaseImage"/>
                     <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TableRaid)}>
                         <p>TABLE RAID - A TURN BASED GAME IN VR</p>
+                    </div>
+                </div>
+            </div>
+            <div className="showcaseRow">
+                <div className="showcaseItem">
+                    <img src={larry_img}
+                    alt="larry_image"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BotLarry)}>
+                        <p>BOT LARRY - A DISCORD BOT INSPIRED BY A FRIEND</p>
+                    </div>
+                </div>
+                <div className="showcaseItem">
+                    <img src={caps_img}
+                    alt="bottlecap_image"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BottleCaps)}>
+                        <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
                     </div>
                 </div>
             </div>
