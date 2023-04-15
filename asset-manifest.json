@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Interactive-portfolio/static/css/main.454febd6.css",
-    "main.js": "/Interactive-portfolio/static/js/main.dd90db25.js",
+    "main.js": "/Interactive-portfolio/static/js/main.5419c4e5.js",
     "static/media/bottlecaps.pdf": "/Interactive-portfolio/static/media/bottlecaps.a7e570d507452bb143e5.pdf",
     "static/media/tableraid.pdf": "/Interactive-portfolio/static/media/tableraid.d8824a4caa9362d9c3ca.pdf",
     "static/media/montecarlo.pdf": "/Interactive-portfolio/static/media/montecarlo.8f66479549f50fce03f8.pdf",
@@ -18,13 +18,20 @@
     "static/media/ux.png": "/Interactive-portfolio/static/media/ux.a8fdb42df3cd5cc85168.png",
     "static/media/original_me.jpg": "/Interactive-portfolio/static/media/original_me.bca4719550e5b87242ce.jpg",
     "static/media/ux_overview.png": "/Interactive-portfolio/static/media/ux_overview.eb28c58f370e4ef2f3a8.png",
+    "static/media/blubattack.png": "/Interactive-portfolio/static/media/blubattack.67a4d71942c90f57911d.png",
+    "static/media/larry_crosshair.png": "/Interactive-portfolio/static/media/larry_crosshair.2ec97e5a1a81b15a3ab5.png",
+    "static/media/larry_s1mple.png": "/Interactive-portfolio/static/media/larry_s1mple.f6e029df8348d9f5c76c.png",
+    "static/media/larry_citat.png": "/Interactive-portfolio/static/media/larry_citat.8032dd1602ea8cf431e8.png",
+    "static/media/larry.png": "/Interactive-portfolio/static/media/larry.8dea1c6e99d3496c7472.png",
+    "static/media/larry_larry.png": "/Interactive-portfolio/static/media/larry_larry.6af47748ab1f97f5ad86.png",
+    "static/media/larry_karta.png": "/Interactive-portfolio/static/media/larry_karta.dcf8fe83f4ae55bc5042.png",
     "static/media/caps_closeup.png": "/Interactive-portfolio/static/media/caps_closeup.29b1dea4ef0763c24a92.png",
     "index.html": "/Interactive-portfolio/index.html",
     "main.454febd6.css.map": "/Interactive-portfolio/static/css/main.454febd6.css.map",
-    "main.dd90db25.js.map": "/Interactive-portfolio/static/js/main.dd90db25.js.map"
+    "main.5419c4e5.js.map": "/Interactive-portfolio/static/js/main.5419c4e5.js.map"
   },
   "entrypoints": [
     "static/css/main.454febd6.css",
-    "static/js/main.dd90db25.js"
+    "static/js/main.5419c4e5.js"
   ]
 }
