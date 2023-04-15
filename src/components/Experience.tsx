@@ -20,7 +20,7 @@ const Experience: React.FC<{}> = () => {
             <br />
             <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
-            <h2>MASTER THESIS @GOODBYE KANSAS STUDIOS</h2>
+            <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
                 <p className="iconText">Currently</p>
@@ -32,23 +32,23 @@ const Experience: React.FC<{}> = () => {
                     href="https://goodbyekansasstudios.com/"
                     target="_blank" rel="noreferrer"
                 >
-                    Read more about Goodbye Kansas here
+                    Read more about Goodbye Kansas Studios here
                 </a>
             </div>
             <p>
                 Goodbye Kansas is a VFX studio in Stockholm that works with film,
-                TV-series, games, gametrailers and commercials. My thesis work is
-                focused around procedurally generating pores and wrinkles for facial
-                3D models. More info will be posted in the future!
+                TV-series, games, gametrailers and commercials. My thesis work is focused
+                around procedurally generating pores and wrinkles for facial
+                3D models which is to be implemented as a Houdini operator.
             </p>
-            {/* <h3>
+            <h3>
                 Some of my duties and learning experiences:
             </h3>
             <ul>
-                <li><p>Look into the environmental effects of solar panels.</p></li>
-                <li><p>Investigate effects of individual billing for water and electricity.</p></li>
-                <li><p>Learning about teamwork in an office environment.</p></li>
-            </ul> */}
+                <li><p>Researching procedural methods for texture generation.</p></li>
+                <li><p>Creating interactive operators for Houdini using C++.</p></li>
+                <li><p>Debugging of running processes with gdb.</p></li>
+            </ul>
             <hr />
             <h2>MTEK</h2>
             <div className="iconTextRow">
