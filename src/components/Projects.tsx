@@ -1,4 +1,5 @@
 import larry_img from "../images/larry.png"
+import blub_img from "../images/blubattack.png"
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
@@ -9,6 +10,7 @@ import "../styles/images.scss"
 import BottleCaps from "../projects/BottleCaps"
 import TableRaid from "../projects/TableRaid"
 import BotLarry from "../projects/BotLarry"
+import BlubAttack from "../projects/BlubAttack"
 import GlobalIllumination from "../projects/GlobalIllumination"
 import MatPlan from "../projects/MatPlan"
 
@@ -63,11 +65,11 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     </div>
                 </div>
                 <div className="showcaseItem">
-                    <img src={caps_img}
+                    <img src={blub_img}
                     alt="bottlecap_image"
                     className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BottleCaps)}>
-                        <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BlubAttack)}>
+                        <p>BLUB ATTACK - A TOWER DEFENSE GAME WITH AI PERSONALITIES</p>
                     </div>
                 </div>
             </div>
