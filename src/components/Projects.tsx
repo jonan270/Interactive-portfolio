@@ -25,7 +25,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
             <h1>PROJECT SHOWROOM</h1>
             <p>
                 Below you will find some especially interesting projects from
-                my study time. Have a look around!
+                my spare time as well as study related projects. Have a look around!
             </p>
             <div className="showcaseRow">
                 <div className="showcaseItem--large">

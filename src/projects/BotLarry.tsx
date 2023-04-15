@@ -12,7 +12,7 @@ const BotLarry: React.FC<{}> = () => {
                 Bot Larry is a hobby project inspired by a dear friend
                 who is known for his creative, sometimes confusing
                 sayings. Bot Larry exists in Discord and can repeat
-                famous quotes said by the real Larry, come with suggestions
+                famous quotes said by the real Larry, come up with suggestions
                 for what Counter Strike maps to play, randomly generate
                 crosshairs for the game and more.
             </p>

@@ -9,8 +9,9 @@ const BlubAttack: React.FC<{}> = () => {
                 Tower defense games have been around for a long time. Me and my
                 friend Tilda decided to combine two courses to not only make a
                 fun game, but also try to represent different personalities for
-                mobs in the game using the A* algorithm which is a common method
-                for optimisation.
+                mobs in the game. This was achieved using the A* algorithm, which
+                is a common method for optimization but is also commonly used for
+                AI in games.
             </p>
             <div className="iframeWrapper">
                 <div className="iframeContainer">
