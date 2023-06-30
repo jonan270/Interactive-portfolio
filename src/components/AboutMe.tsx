@@ -32,8 +32,9 @@ const AboutMe: React.FC<{}> = () => {
             <hr/>
             <p>
                 A 24 year old social nerd who loves video games and guitars.
-                Currently I am working on my engineering thesis which you can
-                read more about below.
+                Right now I work as a gameplay programmer at Avalanche Studios
+                where I mainly work on their latest fishing game experience: 
+                The Angler.
             </p>
 
             <div className="iconTextRow">

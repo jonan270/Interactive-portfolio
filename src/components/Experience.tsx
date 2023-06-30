@@ -8,6 +8,8 @@ const Experience: React.FC<{}> = () => {
         "https://ridecake.com"
     const swegonLink: string = 
         "https://www.swegon.com"
+    const divaLink: string =
+        "https://www.foo.com"
         
     
     return(
@@ -20,10 +22,38 @@ const Experience: React.FC<{}> = () => {
             <br />
             <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
+            <h2>GAMEPLAY PROGRAMMER AT AVALANCHE STUDIOS</h2>
+            <div className="iconTextRow">
+                <AccessTimeFilledIcon color="primary"/>
+                <p className="iconText">2023-08 / current</p>
+            </div>
+            <div className="iconTextRow">
+                <InfoIcon color="primary"/>
+                <a
+                    className="iconText"
+                    href="https://avalanchestudios.com/"
+                    target="_blank" rel="noreferrer"
+                >
+                    Read more about Avalanche Studios here
+                </a>
+            </div>
+            <p>
+                As a gameplay programmer at Avalanche Studios, I am part of
+                the Expansive Worlds team. Something something the angler.
+            </p>
+            <h3>
+                Some of my duties and learning experiences:
+            </h3>
+            <ul>
+                <li><p>Researching procedural methods for texture generation.</p></li>
+                <li><p>Creating interactive operators for Houdini using C++.</p></li>
+                <li><p>Debugging of running processes with gdb.</p></li>
+            </ul>
+            <hr />
             <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
-                <p className="iconText">Currently</p>
+                <p className="iconText">2023-01 / 2023-06</p>
             </div>
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
@@ -37,9 +67,13 @@ const Experience: React.FC<{}> = () => {
             </div>
             <p>
                 Goodbye Kansas is a VFX studio in Stockholm that works with film,
-                TV-series, games, gametrailers and commercials. My thesis work is focused
+                TV-series, games, gametrailers and commercials. My thesis work was focused
                 around procedurally generating pores and wrinkles for facial
-                3D models which is to be implemented as a Houdini operator.
+                3D models. This was implemented through a custom written Houdini
+                SOP with the goal of improving the level of detail for meshes
+                obtained through 3D-scanning. The report for the thesis
+                (along with some neat rendered results) can be
+                found <a href={divaLink} target="_blank" rel="noreferrer">here</a>.
             </p>
             <h3>
                 Some of my duties and learning experiences:
