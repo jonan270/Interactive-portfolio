@@ -10,6 +10,8 @@ const Experience: React.FC<{}> = () => {
         "https://www.swegon.com"
     const divaLink: string =
         "https://www.foo.com"
+    const theAnglerLink: string =
+        "https://cotwtheangler.com/"
         
     
     return(
@@ -22,10 +24,10 @@ const Experience: React.FC<{}> = () => {
             <br />
             <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
-            <h2>GAMEPLAY PROGRAMMER AT AVALANCHE STUDIOS</h2>
+            <h2>GAMEPLAY PROGRAMMER AT AVALANCHE STUDIOS GROUP</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
-                <p className="iconText">2023-08 / current</p>
+                <p className="iconText">2023-08-09 / current</p>
             </div>
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
@@ -34,20 +36,27 @@ const Experience: React.FC<{}> = () => {
                     href="https://avalanchestudios.com/"
                     target="_blank" rel="noreferrer"
                 >
-                    Read more about Avalanche Studios here
+                    Read more about Avalanche Studios Group here
                 </a>
             </div>
             <p>
-                As a gameplay programmer at Avalanche Studios, I am part of
-                the Expansive Worlds team. Something something the angler.
+                As a gameplay programmer at Avalanche Studios Group, I am part of
+                the Expansive Worlds team working on <a href={theAnglerLink} target="_blank" rel="noreferrer">
+                        The Angler
+                </a>.
             </p>
             <h3>
                 Some of my duties and learning experiences:
             </h3>
             <ul>
-                <li><p>Researching procedural methods for texture generation.</p></li>
-                <li><p>Creating interactive operators for Houdini using C++.</p></li>
-                <li><p>Debugging of running processes with gdb.</p></li>
+                <li><p>
+                    C++ based gameplay programming for implementing gameplay features
+                    inside <a href={theAnglerLink} target="_blank" rel="noreferrer">
+                        The Angler
+                    </a>.
+                </p></li>
+                <li><p>Varied tasks including physics, AI, UI and VFX.</p></li>
+                <li><p>Version handling using Perforce.</p></li>
             </ul>
             <hr />
             <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
