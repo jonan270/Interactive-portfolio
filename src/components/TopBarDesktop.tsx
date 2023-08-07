@@ -27,7 +27,6 @@ const TopBarDesktop: React.FC<Props> = ({links}) => {
                 </a>
                 <a href={links.linkedinLink} target="_blank" rel="noreferrer">
                     <IconButton
-                        onClick={() => console.log("Linking to GitHub...")}
                         color="primary"
                         aria-label="Visit LinkedIn profile"
                         component="label">
