@@ -14,7 +14,7 @@ const Content: React.FC<Props> = ({overlay}) => {
         <div id="content" className="chapter">
             <AboutMe/>
             <Projects overlay={overlay}/>
-            <Experience/>
+            <Experience overlay={overlay}/>
             <div id="rocketLaunchPad">
                 <Button
                     startIcon={

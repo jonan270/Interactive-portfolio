@@ -92,6 +92,10 @@ Button {
     margin: 0;
 }
 
+.descriptionButtonRow {
+    margin-top: 40px;
+}
+
 .iconText {
     color: $accent-color !important;
     font-size: min(2.7vw, 20px) !important;
