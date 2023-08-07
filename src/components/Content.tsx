@@ -17,19 +17,19 @@ const Content: React.FC<Props> = ({overlay}) => {
             <Experience/>
             <div id="rocketLaunchPad">
                 <Button
-                startIcon={
-                    <IconButton
+                    startIcon={
+                        <IconButton
+                            size="large"
+                            color="primary"
+                            aria-label="TO THE TOP"
+                            component="label">
+                                <RocketLaunchIcon fontSize="large"/>
+                        </IconButton>
+                    }
+                    variant="outlined"
                     size="large"
-                    color="primary"
-                    aria-label="TO THE TOP"
-                    component="label">
-                        <RocketLaunchIcon fontSize="large"/>
-                    </IconButton>
-                }
-                variant="outlined"
-                size="large"
-                component={HashLink}
-                smooth to="/#about"
+                    component={HashLink}
+                    smooth to="/#about"
                 >
                     To the top
                 </Button>
