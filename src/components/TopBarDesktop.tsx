@@ -36,7 +36,7 @@ const TopBarDesktop: React.FC<Props> = ({links}) => {
             </div>
             <div className="titleText">
                 <h1>Jonathan Andersson</h1>
-                <p>Gameplay Programmer and Media Technology Engineer</p>
+                <p>Gameplay Programmer at Avalanche Studios Group / M.Sc in Media Technology and Engineering</p>
             </div>
             <div className="menuButtons">
                 <Box display="flex" justifyContent="center">

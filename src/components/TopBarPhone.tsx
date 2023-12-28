@@ -104,7 +104,7 @@ const TopBarPhone: React.FC<Props> = ({links}) => {
                 </div>
                 <div className="titleText--phone">
                     <h1>Jonathan Andersson</h1>
-                    <p>Gameplay Programmer and Media Technology Engineer</p>
+                    <p>Gameplay Programmer at Avalanche Studios Group</p>
                 </div>
             </nav>
         </div>
