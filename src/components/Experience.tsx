@@ -2,18 +2,20 @@ import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
 const Experience: React.FC<{}> = () => {
     
+    const theAnglerLink: string =
+        "https://cotwtheangler.com/"
+    const theAnglerTrailerLink: string =
+        "https://www.youtube.com/embed/19XZvgZrm08"
+
     const koenigseggLink: string = 
         "https://www.koenigsegg.com/"
     const cakeLink: string = 
         "https://ridecake.com"
     const swegonLink: string = 
         "https://www.swegon.com"
-    const divaLink: string =
-        "https://www.foo.com"
-    const theAnglerLink: string =
-        "https://cotwtheangler.com/"
+    const thesisLink: string =
+        "https://drive.google.com/file/d/1_XwvjHs3-z0roUmikAgThhkCk-2FtZXV/view?usp=sharing"
         
-    
     return(
         <div id="experience" className="chapter">
             <h1>EXPERIENCE</h1>
@@ -40,22 +42,33 @@ const Experience: React.FC<{}> = () => {
                 </a>
             </div>
             <p>
+                Avalanche Studios Group consists of around 600 passionate people
+                spread accross New York, Malmö, Liverpool, Montreal and Stockholm
+                where I am based. Avalanche games are made using the proprietary
+                Apex Engine and are typically shipped to a number of platforms.
+            </p>
+            <p>
                 As a gameplay programmer at Avalanche Studios Group, I am part of
                 the Expansive Worlds team working on <a href={theAnglerLink} target="_blank" rel="noreferrer">
-                        The Angler
+                        Call of the Wild: The Angler
                 </a>.
             </p>
+            <div className="iframeWrapper">
+                <div className="iframeContainer">
+                    <iframe src={theAnglerTrailerLink} title="Table Raid - a turn based game in VR"></iframe>
+                </div>
+            </div>
             <h3>
                 Some of my duties and learning experiences:
             </h3>
             <ul>
-                <li><p>
-                    C++ based gameplay programming for implementing gameplay features
-                    inside <a href={theAnglerLink} target="_blank" rel="noreferrer">
-                        The Angler
-                    </a>.
-                </p></li>
-                <li><p>Varied tasks including physics, AI, UI and VFX.</p></li>
+                <li>
+                    <p>
+                    Primarily C++ based programming for implementing gameplay features
+                    and bug fixing inside The Angler.
+                    </p>
+                </li>
+                <li><p>Working with multiple platforms including Playstation 4, Playstation 5, Xbox One and Xbox Series X/S.</p></li>
                 <li><p>Version handling using Perforce.</p></li>
             </ul>
             <hr />
@@ -82,7 +95,7 @@ const Experience: React.FC<{}> = () => {
                 SOP with the goal of improving the level of detail for meshes
                 obtained through 3D-scanning. The report for the thesis
                 (along with some neat rendered results) can be
-                found <a href={divaLink} target="_blank" rel="noreferrer">here</a>.
+                found <a href={thesisLink} target="_blank" rel="noreferrer">here</a>.
             </p>
             <h3>
                 Some of my duties and learning experiences:
