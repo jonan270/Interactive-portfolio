@@ -4,7 +4,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";
 import SchoolIcon from "@mui/icons-material/School";
 import TerminalIcon from '@mui/icons-material/Terminal';
-import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 
 const AboutMe: React.FC<{}> = () => {
     const theAnglerLink: string =
