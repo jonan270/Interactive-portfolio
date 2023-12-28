@@ -34,8 +34,8 @@ const AboutMe: React.FC<{}> = () => {
             <hr/>
             <p>
                 A 25 year old social nerd who loves video games and guitars.
-                Right now, I work as a gameplay programmer at Avalanche Studios
-                where I work on their latest outdoor gaming experience:&nbsp;
+                Right now, I work as a Gameplay Programmer at Avalanche Studios Group
+                where I work on our latest outdoor gaming experience:&nbsp;
                 <a href={theAnglerLink} target="_blank" rel="noreferrer">
                         Call of the Wild: The Angler
                 </a>.
