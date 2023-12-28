@@ -1,13 +1,6 @@
-import DescriptionIcon from '@mui/icons-material/Description';
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
-import AvalancheExperience from '../detailedExperience/Avalanche';
-import {Button, IconButton} from "@mui/material";
-interface Props {
-    overlay: Overlay
-}
-
-const Experience: React.FC<Props> = ({overlay}) => {
+const Experience: React.FC<{}> = () => {
     
     const koenigseggLink: string = 
         "https://www.koenigsegg.com/"
@@ -19,6 +12,7 @@ const Experience: React.FC<Props> = ({overlay}) => {
         "https://www.foo.com"
     const theAnglerLink: string =
         "https://cotwtheangler.com/"
+        
     
     return(
         <div id="experience" className="chapter">
@@ -30,21 +24,10 @@ const Experience: React.FC<Props> = ({overlay}) => {
             <br />
             <h1>PROFESSIONAL EXPERIENCES</h1>
             <hr />
-            <h2 onClick={() => overlay.triggerOverlay(AvalancheExperience)}>
-                GAMEPLAY PROGRAMMER AT AVALANCHE STUDIOS GROUP
-            </h2>
+            <h2>GAMEPLAY PROGRAMMER AT AVALANCHE STUDIOS GROUP</h2>
             <div className="iconTextRow">
                 <AccessTimeFilledIcon color="primary"/>
                 <p className="iconText">2023-08-09 / current</p>
-            </div>
-            <div className="iconTextRow">
-                <DescriptionIcon color="primary"/>
-                <p
-                    className="iconText"
-                    onClick={() => {overlay.triggerOverlay(AvalancheExperience)}}
-                >
-                    Click here for a more detailed description
-                </p>
             </div>
             <div className="iconTextRow">
                 <InfoIcon color="primary"/>
@@ -75,24 +58,6 @@ const Experience: React.FC<Props> = ({overlay}) => {
                 <li><p>Varied tasks including physics, AI, UI and VFX.</p></li>
                 <li><p>Version handling using Perforce.</p></li>
             </ul>
-            <div className="descriptionButtonRow">
-                <Button
-                    startIcon={
-                        <IconButton
-                            size="small"
-                            color="secondary"
-                            aria-label="TO THE TOP"
-                            component="label">
-                                <DescriptionIcon/>
-                        </IconButton>
-                    }
-                    variant="contained"
-                    size="large"
-                    onClick={() => {overlay.triggerOverlay(AvalancheExperience)}}
-                >
-                    Click here for a detailed description
-                </Button>
-            </div>
             <hr />
             <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
             <div className="iconTextRow">
