@@ -7,6 +7,9 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 
 const AboutMe: React.FC<{}> = () => {
+    const theAnglerLink: string =
+        "https://cotwtheangler.com/"
+
     return(
         <div id = "about" className="chapter">
             <img src={profile} alt="profile_image" id='profileImg'/>
@@ -31,24 +34,19 @@ const AboutMe: React.FC<{}> = () => {
             </div>
             <hr/>
             <p>
-                A 24 year old social nerd who loves video games and guitars.
-                Right now I work as a gameplay programmer at Avalanche Studios
-                where I mainly work on their latest fishing game experience: 
-                The Angler.
+                A 25 year old social nerd who loves video games and guitars.
+                Right now, I work as a gameplay programmer at Avalanche Studios
+                where I work on their latest outdoor gaming experience:&nbsp;
+                <a href={theAnglerLink} target="_blank" rel="noreferrer">
+                        Call of the Wild: The Angler
+                </a>.
             </p>
 
             <div className="iconTextRow">
                 <TerminalIcon color="primary"/>
                 <p className="iconText">Favorite programming languages:</p>
             </div>
-            <p className="iconText--nextLine">C++, C#, Java, Python, GLSL</p>
-
-            <div className="iconTextRow">
-                <HomeRepairServiceIcon color="primary"/>
-                <p className="iconText">Other skills:</p>
-            </div>
-            <p className="iconText--nextLine">Unity, Git, Linux, Scrum, maths and engineering</p>
-
+            <p className="iconText--nextLine">C++, C, C#, Python, Java</p>
         </div>
     )
 }
