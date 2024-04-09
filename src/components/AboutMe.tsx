@@ -45,7 +45,7 @@ const AboutMe: React.FC<{}> = () => {
                 <TerminalIcon color="primary"/>
                 <p className="iconText">Favorite programming languages:</p>
             </div>
-            <p className="iconText--nextLine">C++, C, C#, Python, Java</p>
+            <p className="iconText--nextLine">C++, C, C#, Python</p>
         </div>
     )
 }
