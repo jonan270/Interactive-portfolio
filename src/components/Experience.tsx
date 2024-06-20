@@ -5,7 +5,7 @@ const Experience: React.FC<{}> = () => {
     const theAnglerLink: string =
         "https://cotwtheangler.com/"
     const theAnglerTrailerLink: string =
-        "https://www.youtube.com/embed/19XZvgZrm08"
+        "https://cdn.akamai.steamstatic.com/steam/apps/257030005/movie480_vp9.webm?t=1718701253"
 
     const koenigseggLink: string = 
         "https://www.koenigsegg.com/"
