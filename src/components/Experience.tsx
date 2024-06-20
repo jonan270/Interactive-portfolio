@@ -1,18 +1,21 @@
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
 const Experience: React.FC<{}> = () => {
-    
+    // Avalanche
     const theAnglerLink: string =
         "https://cotwtheangler.com/"
     const theAnglerTrailerLink: string =
         "https://cdn.akamai.steamstatic.com/steam/apps/257030005/movie480_vp9.webm?t=1718701253"
 
+    // MTEK
     const koenigseggLink: string = 
         "https://www.koenigsegg.com/"
     const cakeLink: string = 
         "https://ridecake.com"
     const swegonLink: string = 
         "https://www.swegon.com"
+
+    // LiU Thesis
     const thesisLink: string =
         "https://drive.google.com/file/d/1_XwvjHs3-z0roUmikAgThhkCk-2FtZXV/view?usp=sharing"
         
@@ -42,8 +45,8 @@ const Experience: React.FC<{}> = () => {
                 </a>
             </div>
             <p>
-                Avalanche Studios Group consists of around 600 passionate people
-                spread accross New York, Malmö, Liverpool, Montreal and Stockholm
+                Avalanche Studios Group consists of more than 500 passionate people
+                spread accross Liverpool, Malmö and Stockholm
                 where I am based. Avalanche games are made using the proprietary
                 Apex Engine and are typically shipped to a number of platforms.
             </p>
