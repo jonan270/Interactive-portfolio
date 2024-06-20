@@ -56,11 +56,6 @@ const Experience: React.FC<{}> = () => {
                         Call of the Wild: The Angler
                 </a>.
             </p>
-            <div className="iframeWrapper">
-                <div className="iframeContainer">
-                    <iframe src={theAnglerTrailerLink} title="Table Raid - a turn based game in VR"></iframe>
-                </div>
-            </div>
             <h3>
                 Some of my duties and learning experiences:
             </h3>
@@ -74,6 +69,11 @@ const Experience: React.FC<{}> = () => {
                 <li><p>Working with multiple platforms including Playstation 4, Playstation 5, Xbox One and Xbox Series X/S.</p></li>
                 <li><p>Version handling using Perforce.</p></li>
             </ul>
+            <div className="iframeWrapper">
+                <div className="iframeContainer">
+                    <iframe src={theAnglerTrailerLink} title="Console launch trailer | Call of the Wild: The Angler"></iframe>
+                </div>
+            </div>
             <hr />
             <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
             <div className="iconTextRow">
