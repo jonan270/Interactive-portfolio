@@ -31,21 +31,22 @@ const AboutMe: React.FC<{}> = () => {
                     M.Sc in Media Technology
                 </a>
             </div>
+            <div className="iconTextRow">
+                <TerminalIcon color="primary"/>
+                <p className="iconText">Favorite programming languages:</p>
+            </div>
+            <p className="iconText--nextLine">C++, C, C#, Python</p>
             <hr/>
+            <h2>INTRODUCTION</h2>
             <p>
-                A 25 year old social nerd who loves video games and guitars.
+                Hello to whoever you may be and welcome to my small corner of the internet!
+                I am a 26 year old social nerd who loves video games and guitars.
                 Right now, I work as a Gameplay Programmer at Avalanche Studios Group
                 where I work on our latest outdoor gaming experience:&nbsp;
                 <a href={theAnglerLink} target="_blank" rel="noreferrer">
                         Call of the Wild: The Angler
                 </a>.
             </p>
-
-            <div className="iconTextRow">
-                <TerminalIcon color="primary"/>
-                <p className="iconText">Favorite programming languages:</p>
-            </div>
-            <p className="iconText--nextLine">C++, C, C#, Python</p>
         </div>
     )
 }
