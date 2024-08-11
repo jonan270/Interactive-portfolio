@@ -93,7 +93,7 @@ Button {
 }
 
 .iconText {
-    color: $accent-color !important;
+    color: $dark-color !important;
     font-size: min(2.7vw, 20px) !important;
     margin: 10px;
     margin-left: 10px;
@@ -111,18 +111,18 @@ p {
 }
 
 h1 {
-    color: $accent-color;
+    color: $dark-color;
     font-family: $roboto-font;
 }
 
 h2 {
-    color: $accent-color;
+    color: $dark-color;
     font-family: $roboto-font;
     font-size: min(24px, 4vw);
 }
 
 h3 {
-    color: $accent-color;
+    color: $dark-color;
     font-family: monospace;
     font-size: min(18px, 3vw);
 }
@@ -186,7 +186,7 @@ h1 {
     }
 
     #content & {
-        color: $accent-color;
+        color: $dark-color;
     }
 }
 

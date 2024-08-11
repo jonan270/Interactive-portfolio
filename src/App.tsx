@@ -12,11 +12,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#E06C75",        // Bright accent color
-      contrastText: "#282C34" // Dark button text
+      main: "#87af87",        // Bright accent color
+      contrastText: "#2A2426" // Dark button text
     },
     secondary: {
-      main: "#282C34",
+      main: "#2A2426",
     }
   },
 });
