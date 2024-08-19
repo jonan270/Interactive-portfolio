@@ -1,4 +1,4 @@
-import profile from "../images/profile.jpg"
+import profile from "../images/profile_2024.jpg"
 import "../styles/images.scss"
 import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";

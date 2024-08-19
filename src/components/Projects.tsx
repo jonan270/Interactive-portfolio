@@ -39,24 +39,6 @@ const Projects: React.FC<Props> = ({overlay}) => {
             </div>
             <div className="showcaseRow">
                 <div className="showcaseItem">
-                    <img src={larry_img}
-                    alt="larry_image"
-                    className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BotLarry)}>
-                        <p>BOT LARRY - A DISCORD BOT INSPIRED BY A FRIEND</p>
-                    </div>
-                </div>
-                <div className="showcaseItem">
-                    <img src={caps_img}
-                    alt="bottlecap_image"
-                    className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BottleCaps)}>
-                        <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
-                    </div>
-                </div>
-            </div>
-            <div className="showcaseRow">
-                <div className="showcaseItem">
                     <img src={globalIllumination_img}
                     alt="global_illumination"
                     className="showcaseImage"/>
@@ -74,6 +56,25 @@ const Projects: React.FC<Props> = ({overlay}) => {
                 </div>
             </div>
             <div className="showcaseRow">
+                <div className="showcaseItem">
+                    <img src={caps_img}
+                    alt="bottlecap_image"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BottleCaps)}>
+                        <p>IMAGE REPRODUCTION USING BOTTLECAPS</p>
+                    </div>
+                </div>
+                <div className="showcaseItem">
+                    <img src={larry_img}
+                    alt="larry_image"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(BotLarry)}>
+                        <p>BOT LARRY - A DISCORD BOT INSPIRED BY A FRIEND</p>
+                    </div>
+                </div>
+            </div>
+            {/*
+            <div className="showcaseRow">
                 <div className="showcaseItem--large">
                     <img src={ux_img}
                     alt="ux_image"
@@ -83,6 +84,7 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     </div>
                 </div>
             </div>
+            */}
             <h3>Click the images to learn more!</h3>
         </div>
     )

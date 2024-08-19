@@ -122,7 +122,13 @@ h2 {
 }
 
 h3 {
-    color: $dark-color;
+    color: $accent-color;
+    font-family: monospace;
+    font-size: min(18px, 3vw);
+}
+
+#content h3 {
+    color: $dark-color !important;
     font-family: monospace;
     font-size: min(18px, 3vw);
 }
