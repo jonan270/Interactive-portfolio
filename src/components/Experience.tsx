@@ -1,11 +1,9 @@
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
 const Experience: React.FC<{}> = () => {
-    // Avalanche
-    const theAnglerLink: string =
-        "https://cotwtheangler.com/"
-    const theAnglerTrailerLink: string =
-        "https://www.youtube.com/embed/19XZvgZrm08"
+
+    const siggraphDenverTalk: string =
+        "https://s2024.conference-program.org/presentation/?id=gensub_120&sess=sess187"
 
     // MTEK
     const koenigseggLink: string = 
@@ -50,12 +48,6 @@ const Experience: React.FC<{}> = () => {
                 where I am based. Avalanche games are made using the proprietary
                 Apex Engine and are typically shipped to a number of platforms.
             </p>
-            <p>
-                As a gameplay programmer at Avalanche Studios Group, I am part of
-                the Expansive Worlds team working on <a href={theAnglerLink} target="_blank" rel="noreferrer">
-                        Call of the Wild: The Angler
-                </a>.
-            </p>
             <h3>
                 Some of my duties and learning experiences:
             </h3>
@@ -63,17 +55,12 @@ const Experience: React.FC<{}> = () => {
                 <li>
                     <p>
                     Primarily C++ based programming for implementing gameplay features
-                    and bug fixing inside The Angler.
+                    and bug fixes.
                     </p>
                 </li>
                 <li><p>Working with multiple platforms including Playstation 4, Playstation 5, Xbox One and Xbox Series X/S.</p></li>
                 <li><p>Version handling using Perforce.</p></li>
             </ul>
-            <div className="iframeWrapper">
-                <div className="iframeContainer">
-                    <iframe src={theAnglerTrailerLink} title="Console launch trailer | Call of the Wild: The Angler"></iframe>
-                </div>
-            </div>
             <hr />
             <h2>MASTER THESIS AT GOODBYE KANSAS STUDIOS</h2>
             <div className="iconTextRow">
@@ -99,6 +86,15 @@ const Experience: React.FC<{}> = () => {
                 obtained through 3D-scanning. The report for the thesis
                 (along with some neat rendered results) can be
                 found <a href={thesisLink} target="_blank" rel="noreferrer">here</a>.
+            </p>
+            <p>
+                The project has
+                since seen continued development by the Goodbye Kansas R&amp;D team and was presented
+                as a 20 minute talk titled:
+                "An Artist-friendly Method for Procedural Skin Generation and Visualization in Houdini"
+                at <a href={siggraphDenverTalk} target="_blank" rel="noreferrer">
+                    Siggraph 2024 in Denver, US.
+                </a>
             </p>
             <h3>
                 Some of my duties and learning experiences:

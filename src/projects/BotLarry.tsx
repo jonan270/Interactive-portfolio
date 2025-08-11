@@ -18,17 +18,6 @@ const BotLarry: React.FC<{}> = () => {
             </p>
             <div className="showcaseRow">
                 <div className="showcaseItem">
-                    <img src={larry_larry}
-                    alt="command_img1"
-                    className="showcaseImage"
-                />
-                </div>
-            </div>
-            <h3>
-                Example of BOT Larry repeating one of many famous quotes.
-            </h3>
-            <div className="showcaseRow">
-                <div className="showcaseItem">
                     <img src={larry_citat}
                     alt="!citat_img"
                     className="showcaseImage"
@@ -40,12 +29,24 @@ const BotLarry: React.FC<{}> = () => {
             </h3>
             <div className="showcaseRow">
                 <div className="showcaseItem">
+                    <img src={larry_larry}
+                    alt="command_img1"
+                    className="showcaseImage"
+                />
+                </div>
+            </div>
+            <h3>
+                !larry prompts BOT Larry to repeat one of the many famous quotes.
+            </h3>
+            <div className="showcaseRow">
+                <div className="showcaseItem">
                     <img src={larry_crosshair}
                     alt="!crosshair_img"
                     className="showcaseImage"
                 />
                 </div>
             </div>
+
             <h3>
                 !crosshair generates a random crosshair to be used when playing Counter Strike.
             </h3>

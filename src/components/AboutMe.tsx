@@ -2,12 +2,13 @@ import profile from "../images/profile_2024.jpg"
 import "../styles/images.scss"
 import EmailIcon from '@mui/icons-material/Email';
 import { PhoneAndroid as Phone } from "@mui/icons-material";
+import ConstructionIcon from '@mui/icons-material/Construction';
 import SchoolIcon from "@mui/icons-material/School";
 import TerminalIcon from '@mui/icons-material/Terminal';
 
 const AboutMe: React.FC<{}> = () => {
-    const theAnglerLink: string =
-        "https://cotwtheangler.com/"
+    const contrabandLink: string =
+        "https://www.xbox.com/en-US/games/contraband"
 
     return(
         <div id = "about" className="chapter">
@@ -20,6 +21,16 @@ const AboutMe: React.FC<{}> = () => {
             <div className="iconTextRow">
                 <EmailIcon color="primary"/>
                 <p className="iconText">cg.jonathan.andersson@gmail.com</p>
+            </div>
+            <div className="iconTextRow">
+                <ConstructionIcon color="primary"/>
+                <a
+                className="iconText"
+                href="https://avalanchestudios.com/"
+                target="_blank" rel="noreferrer"
+                >
+                    Avalanche Studios Group
+                </a>
             </div>
             <div className="iconTextRow">
                 <SchoolIcon color="primary"/>
@@ -40,11 +51,11 @@ const AboutMe: React.FC<{}> = () => {
             <h2>INTRODUCTION</h2>
             <p>
                 Hello to whoever you may be and welcome to my small corner of the internet!
-                I am a 26 year old social nerd who loves video games and guitars.
+                I am a 27 year old social nerd who loves video games and guitars.
                 Right now, I work as a Gameplay Programmer at Avalanche Studios Group
-                where I work on our latest outdoor gaming experience:&nbsp;
-                <a href={theAnglerLink} target="_blank" rel="noreferrer">
-                        Call of the Wild: The Angler
+                where I work on an unreleased co-op game named&nbsp;
+                <a href={contrabandLink} target="_blank" rel="noreferrer">
+                        Contraband
                 </a>.
             </p>
         </div>

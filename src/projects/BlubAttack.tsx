@@ -1,3 +1,5 @@
+import report from "../reports/blub_attack.pdf"
+
 const BlubAttack: React.FC<{}> = () => {
     const sourceLink: string = 
         "https://youtube.com/embed/34j1xTd0obg";
@@ -18,6 +20,9 @@ const BlubAttack: React.FC<{}> = () => {
                     <iframe src={sourceLink} title="Table Raid - a turn based game in VR"></iframe>
                 </div>
             </div>
+            <a href={report} target="_blank" rel="noreferrer">
+                Click here to read the full report
+            </a>
         </div>
     )
 }

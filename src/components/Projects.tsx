@@ -3,17 +3,18 @@ import blub_img from "../images/blubattack.png"
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
-import ux_img from "../images/ux.png"
+import contraband_img from "../images/contraband.png"
+import theangler_img from "../images/theangler.jpg"
 
 import "../styles/images.scss"
 
+import Contraband from "../projects/Contraband"
+import TheAngler from "../projects/TheAngler"
 import BottleCaps from "../projects/BottleCaps"
 import TableRaid from "../projects/TableRaid"
 import BotLarry from "../projects/BotLarry"
 import BlubAttack from "../projects/BlubAttack"
 import GlobalIllumination from "../projects/GlobalIllumination"
-import MatPlan from "../projects/MatPlan"
-
 
 interface Props {
     overlay: Overlay
@@ -24,9 +25,34 @@ const Projects: React.FC<Props> = ({overlay}) => {
         <div id="projects" className="chapter">
             <h1>PROJECT SHOWROOM</h1>
             <p>
-                Below you will find some especially interesting projects from
-                my spare time as well as study related projects. Have a look around!
+                Below you will find a mix of projects I have worked on. Click the images for more detailed information!
             </p>
+            <br />
+            <h1>PROFESSIONAL PROJECTS</h1>
+            <hr />
+            <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={contraband_img}
+                    alt="tableraid"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(Contraband)}>
+                        <p>CONTRABAND - AN UNRELEASED XBOX TITLE</p>
+                    </div>
+                </div>
+            </div>
+            <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={theangler_img}
+                    alt="tableraid"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TheAngler)}>
+                        <p>CALL OF THE WILD: THE ANGLER</p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <h1>PASSION PROJECTS</h1>
+            <hr />
             <div className="showcaseRow">
                 <div className="showcaseItem--large">
                     <img src={raid_img}
@@ -73,19 +99,6 @@ const Projects: React.FC<Props> = ({overlay}) => {
                     </div>
                 </div>
             </div>
-            {/*
-            <div className="showcaseRow">
-                <div className="showcaseItem--large">
-                    <img src={ux_img}
-                    alt="ux_image"
-                    className="showcaseImage"/>
-                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(MatPlan)}>
-                        <p>MATPLAN - A PURE UX PROJECT</p>
-                    </div>
-                </div>
-            </div>
-            */}
-            <h3>Click the images to learn more!</h3>
         </div>
     )
 }
