@@ -1,5 +1,8 @@
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import InfoIcon from '@mui/icons-material/Info';
+
+import team_photo from "../images/cs.png"
+
 const Experience: React.FC<{}> = () => {
 
     const siggraphDenverTalk: string =
@@ -142,39 +145,29 @@ const Experience: React.FC<{}> = () => {
                 <li><p>Unit testing.</p></li>
             </ul>
             <hr />
-            <h2>TEKNIKSPRÅNGET</h2>
-            <div className="iconTextRow">
-                <AccessTimeFilledIcon color="primary"/>
-                <p className="iconText">2018-02 / 2018-06</p>
-            </div>
-            <div className="iconTextRow">
-                <InfoIcon color="primary"/>
-                <a
-                    className="iconText"
-                    href="https://teknikspranget.se/om-teknikspranget/"
-                    target="_blank" rel="noreferrer"
-                >
-                    Read more about Tekniksprånget here
-                </a>
-            </div>
-            <p>
-                Tekniksprånget is a national project where different
-                employers in Sweden offer a four month internship for youth
-                with the goal of making more young people pursue higher
-                education. I did my internship at Sandvikenhus AB, which
-                is a public housing company.
-            </p>
-            <h3>
-                Some of my duties and learning experiences:
-            </h3>
-            <ul>
-                <li><p>Look into the environmental effects of solar panels.</p></li>
-                <li><p>Investigate effects of individual billing for water and electricity.</p></li>
-                <li><p>Learning about teamwork in an office environment.</p></li>
-            </ul>
-            <hr />
             <br />
             <h1>EXTRACURRICULAR EXPERIENCES</h1>
+            <hr />
+            <h2>FINALIST IN THE TINGENT COMPETITIVE CS2 TOURNAMENT</h2>
+            <div className="iconTextRow">
+                <AccessTimeFilledIcon color="primary"/>
+                <p className="iconText">2024-02</p>
+            </div>
+            <p>
+                In 2024, I got the chance to represent Avalanche in a CS2 tournament hosted by
+                Tingent. During the tournament, we got to compete against other gaming companies like Mojang,
+                Embark and Starbreeze. In the end we managed to make it to the finals where sadly our journey ended in second place.
+            </p>
+            <br />
+            <div className="showcaseRow">
+                <div className="showcaseItem--single">
+                    <img src={team_photo}
+                    alt="zoomed_img"
+                    className="showcaseImage--single"
+                    />
+                </div>
+            </div>
+            <br />
             <hr />
             <h2>CHIEF OF ALUMNI AND INDUSTRY CONTACTS</h2>
             <div className="iconTextRow">
