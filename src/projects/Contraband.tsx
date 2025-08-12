@@ -26,9 +26,8 @@ const Contraband : React.FC<{}> = () => {
                 </div>
             </div>
             <p>
-                I worked as part of the "player ingredients team" with things focused around the 3Cs (Character, Camera, Controls)
-                as well as other things related to the player character. Some of the more project agnostic things included things like
-                camera code, weapons, grenades and player abilities. A lot of the work required close collaboration with game designers and animators.
+                I worked as part of a smaller team with things focused around the 3Cs (Character, Camera, Controls)
+                as well as other things related player mechanics.
             </p>
         </div>
     )
