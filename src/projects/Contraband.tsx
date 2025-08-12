@@ -27,7 +27,7 @@ const Contraband : React.FC<{}> = () => {
             </div>
             <p>
                 I worked as part of a smaller team with things focused around the 3Cs (Character, Camera, Controls)
-                as well as other things related player mechanics.
+                as well as other things related to player mechanics.
             </p>
         </div>
     )

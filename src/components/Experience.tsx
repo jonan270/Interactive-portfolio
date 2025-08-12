@@ -6,7 +6,7 @@ import team_photo from "../images/cs.png"
 const Experience: React.FC<{}> = () => {
 
     const siggraphDenverTalk: string =
-        "https://s2024.conference-program.org/presentation/?id=gensub_120&sess=sess187"
+        "https://dl.acm.org/doi/10.1145/3641233.3665166"
 
     // MTEK
     const koenigseggLink: string = 
@@ -86,7 +86,7 @@ const Experience: React.FC<{}> = () => {
                 around procedurally generating pores and wrinkles for facial
                 3D models. This was implemented through a custom written Houdini
                 SOP with the goal of improving the level of detail for meshes
-                obtained through 3D-scanning. The report for the thesis
+                obtained through 3D-scanning. The thesis report
                 (along with some neat rendered results) can be
                 found <a href={thesisLink} target="_blank" rel="noreferrer">here</a>.
             </p>
@@ -155,8 +155,8 @@ const Experience: React.FC<{}> = () => {
             </div>
             <p>
                 In 2024, I got the chance to represent Avalanche in a CS2 tournament hosted by
-                Tingent. During the tournament, we got to compete against other gaming companies like Mojang,
-                Embark and Starbreeze. In the end we managed to make it to the finals where sadly our journey ended in second place.
+                Tingent. During the tournament, we got to compete against other gaming companies like Embark,
+                Mojang and Starbreeze. In the end we, managed to make it to the finals, where sadly our journey ended in second place.
             </p>
             <br />
             <div className="showcaseRow">
@@ -217,7 +217,7 @@ const Experience: React.FC<{}> = () => {
                 All student receptions at Linköping University are carefully planned
                 to make sure that the new students feel included and welcome at the
                 start of their education. A peer student is an older student who has
-                volunteered to help guide the newer students through the beginning 
+                volunteered to help guide the younger students through the first
                 weeks of university.
             </p>
             <h3>
