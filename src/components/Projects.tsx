@@ -3,11 +3,13 @@ import blub_img from "../images/blubattack.png"
 import globalIllumination_img from "../images/400samples.bmp"
 import caps_img from "../images/caps_me.png"
 import raid_img from "../images/table_raid.png"
+import cotw_img from "../images/cotw.jpg"
 import contraband_img from "../images/contraband.png"
 import theangler_img from "../images/theangler.jpg"
 
 import "../styles/images.scss"
 
+import TheHunter from "../projects/TheHunter"
 import Contraband from "../projects/Contraband"
 import TheAngler from "../projects/TheAngler"
 import BottleCaps from "../projects/BottleCaps"
@@ -30,6 +32,16 @@ const Projects: React.FC<Props> = ({overlay}) => {
             <br />
             <h1>PROFESSIONAL PROJECTS</h1>
             <hr />
+            <div className="showcaseRow">
+                <div className="showcaseItem--large">
+                    <img src={cotw_img}
+                    alt="tableraid"
+                    className="showcaseImage"/>
+                    <div className="showcaseOverlay" onClick={() => overlay.triggerOverlay(TheHunter)}>
+                        <p>THE HUNTER: CALL OF THE WILD</p>
+                    </div>
+                </div>
+            </div>
             <div className="showcaseRow">
                 <div className="showcaseItem--large">
                     <img src={contraband_img}

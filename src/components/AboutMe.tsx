@@ -7,8 +7,8 @@ import SchoolIcon from "@mui/icons-material/School";
 import TerminalIcon from '@mui/icons-material/Terminal';
 
 const AboutMe: React.FC<{}> = () => {
-    const contrabandLink: string =
-        "https://www.xbox.com/en-US/games/contraband"
+    const cotwLink: string =
+        "https://callofthewild.thehunter.com/"
 
     return(
         <div id = "about" className="chapter">
@@ -53,9 +53,9 @@ const AboutMe: React.FC<{}> = () => {
                 Hello to whoever you may be and welcome to my small corner of the internet!
                 I am a 27 year old social nerd who loves video games and guitars.
                 Right now, I work as a Gameplay Programmer at Avalanche Studios Group
-                where I work on an unreleased co-op game named&nbsp;
-                <a href={contrabandLink} target="_blank" rel="noreferrer">
-                        Contraband
+                where I work on our outdoor hunting simulation game named&nbsp;
+                <a href={cotwLink} target="_blank" rel="noreferrer">
+                        theHunter: Call of the Wild
                 </a>.
             </p>
         </div>
